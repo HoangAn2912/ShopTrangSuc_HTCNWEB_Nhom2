@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding:0;
+ 
+}
+.col-3{
+
+    display: flex;
+   
+}
+
+.col-3 a{
+   margin-right:0 px;
+    text-decoration: none;
+    color: black;
+}
+.col-3 ul,li{
+    list-style: none;
+    border: 1px solid ;
+    width: 200px;
+}
+.col-3 ul,li :hover {
+    color: burlywood;
+    background: white (232, 220, 199)
+}
+.col-9 ul,li {
+    color: black;
+    width:100%;
+    
+}
+.submit-button{
+    padding: 5px 15px;
+    border: none;
+    background-color: peru;
+    color: white;
+}
+
