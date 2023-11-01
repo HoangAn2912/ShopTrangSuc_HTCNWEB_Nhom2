@@ -18,14 +18,16 @@
 .header .navbar a{
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: black;
+    margin: 0 20px;
 }
 
 .header .navbar a:hover{
     color: var(--main);
     border-bottom: .1rem solid var(--main);
     padding-top: .5rem;
+    font-weight: bold;
 }
 
 .header .icons div{
@@ -277,7 +279,7 @@
 }
 .blog-item-name {
     color: var(--main);
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     letter-spacing: 0.5px;
     word-spacing: 5px;
     padding-bottom: 10px;
@@ -337,6 +339,31 @@
 .blog-thumb img {
     width: 100%;
 }
+
+/* SUPPORT */
+.support_icon{
+    display: flex;
+    margin: 10px 0;
+}
+.support_icon > i {
+    font-size: 2.2rem;
+    padding-top: 10px;
+    color: var(--main);
+}
+.support_title{
+    margin-left: 10px;
+}
+
+.support_title > h5 {
+    font-size: 1.6rem;
+}
+
+.support_title > p {
+    text-transform: none;
+    font-size: 1.6rem;
+}
+
+
 /* FOOTER*/
 
 .section__font{
@@ -361,8 +388,13 @@ ul > li {
     text-decoration: none;
 }
 
+.Title_footer{
+    padding-bottom: 15px;
+}
+
 .footer_tag:hover{
     color: rgba(231, 130, 15, 0.774);
+    padding-left: 10px;
 }
 
 .fa-icon{
