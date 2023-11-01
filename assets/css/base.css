@@ -171,3 +171,43 @@ body{
         margin-bottom: 6px;
     }
 }
+
+/* LIEN HE */
+.text-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-title-child, .text-font{
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+.text_item > i {
+    font-size: 1.8rem;
+}
+.text_item-child-p{
+    font-size: 1.4rem
+}
+.text_item{
+    display: flex;
+}
+
+.text_item-child{
+    margin-left: 10px;
+}
+
+.text_item-bottom{
+    margin-bottom: 20px;
+}
+.text_item-content  {
+    font-size: 1.6rem;
+    margin:0px 0px -10px;
+}
+.text_item-top{
+    font-size: 1.6rem;
+}
+.submit-button{
+    color:white;
+}

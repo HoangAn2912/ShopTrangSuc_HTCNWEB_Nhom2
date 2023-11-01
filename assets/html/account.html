@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/home.css">
-    
+     
     <link rel="stylesheet" href="../css/account.css">
     <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
@@ -25,11 +25,11 @@
             <img src="../img/logo.png" alt="Logo Website">
         </a>
         <nav class="navbar">
-            <a href="#home">Trang chủ</a>
-            <a href="#products">Sản phẩm</a>
-            <a href="#about">Giới thiệu</a>
-            <a href="#blogs">Blog</a>
-            <a href="#contact">Liên hệ</a>
+            <a href="home.html">Trang chủ</a>
+            <a href="product1.html">Sản phẩm</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="index_blog.html">Blog</a>
+            <a href="contact.html">Liên hệ</a>
 
         </nav>
         <div class="icons">
@@ -63,6 +63,7 @@
                 </div>
                 <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
+            
             <div class="cart-item">
                 <span class="fas fa-items"></span>
                 <img src="../img/logo-web.png" alt="">
@@ -95,13 +96,13 @@
 
         <div class="user-content">
             <div class="user-item">
-                <a href="#" class="user-item-content">Trang cá nhân</a>
+                <a href="account.html" class="user-item-content">Trang cá nhân</a>
             </div>
             <div class="user-item">
-                <a href="#" class="user-item-content">Đăng ký</a>
+                <a href="register.html" class="user-item-content">Đăng ký</a>
             </div>
             <div class="user-item">
-                <a href="#" class="user-item-content">Đăng nhập</a>
+                <a href="login.html" class="user-item-content">Đăng nhập</a>
             </div>
         </div>
     </header> 
@@ -122,12 +123,12 @@
           <!-- Tables -->
           <div id="content" class="col-9">
 
-              <div id="table1" class="table-container ">
+              <div id="table1" class="table-container active">
                   <h4><b>Dashboard</b></h4>
 
                   <div class="dotted-line"> </div>
-                      <p>Hello Erik ( If not Jonh, Logout!) 
-                      <p> From you account Dashboard you can easily check& view your recent orders, manage your shipping and billing  addresses and edit your passwords and account details</p></p>
+                      <p> Xin chào quý khách!
+                      <p>Từ Bảng DashBoard tài khoản của bạn, bạn có thể dễ dàng kiểm tra và xem các đơn đặt hàng gần đây của mình, quản lý địa chỉ giao hàng và thanh toán cũng như chỉnh sửa mật khẩu và chi tiết tài khoản của bạn</p></p>
               </div>
           
               <div id="table2" class="table-container">
@@ -136,35 +137,35 @@
                   <table>
                   <thead>
                       <tr>
-                          <th>Orders</th>
-                          <th>Date</th>
-                          <th>Status</th>
-                          <th>Total</th>
-                          <th>Action</th>
+                          <th>Đơn hàng</th>
+                          <th>Ngày</th>
+                          <th>Trạng thái</th>
+                          <th>Tổng</th>
+                          <th></th>
                           </tr>   
                   </thead>
                   <tbody>
                           <tr>
                           <td>1</td>
-                          <td>Aug24,2023</td>
-                          <td>Pending</td>
-                          <td>500$</td>
-                          <td><input class="pd "type="submit"value="View"></td>
+                          <td>2.10.2023</td>
+                          <td>Đang xác nhận</td>
+                          <td>1.000.000VND</td>
+                          <td><input class="pd "type="submit"value="Xem chi tiết"></td>
                           </tr>   
               
                           <tr>
                           <td>2</td>
-                          <td>July22,2023</td>
-                          <td>Approved</td>
-                          <td>600$</td>
-                          <td><input class="pd" type="submit" value="View"></td>
+                          <td>3.11.2023</td>
+                          <td>Đã xác nhận</td>
+                          <td>2.000.000VND</td>
+                          <td><input class="pd" type="submit" value="Xem chi tiết"></td>
                           </tr> 
                           <tr>
                           <td>3</td>
-                          <td>Jun22,2023</td>
-                          <td>On Hold</td>
-                          <td>$200</td>
-                          <td><input class="pd" type="submit" value="View"></td>
+                          <td>4.10.2023</td>
+                          <td>Đang vận chuyển</td>
+                          <td>1.500.000VND</td>
+                          <td><input class="pd" type="submit" value="Xem chi tiết"></td>
                           </tr> 
                       </tbody>
               
@@ -177,24 +178,24 @@
                   <table>
                       <thead>
                           <tr>
-                              <th>Product</th>
-                              <th>Date</th>
-                              <th>Expire</th>
-                              <th>Download</th>
+                              <th>Sản phẩm</th>
+                              <th>Ngày</th>
+                              <th>Hết hạn</th>
+                              <th>Tải xuống</th>
                           </tr>   
                       </thead>
                       <tbody>
                           <tr>
-                              <td>Haven-Free Real Estate PSD Templace</td>
-                              <td>Sep24,2023</td>
-                              <td>Yes</td>
+                              <td>Lắc tay bạc </td>
+                              <td>2.10.2023</td>
+                              <td>Có</td>
                               <td><input class="tn" type="submit"value="Download Files"></td>
                           </tr>   
                   
                           <tr>
-                              <td>HasTech -Profolio Business Templace</td>
-                              <td>Nov24,2023</td>
-                              <td>Never</td>
+                              <td>Dây chuyền bạc </td>
+                              <td>3.11.2023</td>
+                              <td>Không</td>
                               <td><input class="tn"  type="submit"value="Download Files"></td>
                           </tr> 
                       </tbody>
@@ -205,14 +206,14 @@
               <div id="table4" class="table-container">
                   <h4>Payment Method</h4>
                   <hr>
-                  <p> You Can't Save Your Payment Method yet </p>
+                  <p> Bạn chọn phương thức thanh toán cho đơn hàng của mình </p>
               </div>
 
               <div id="table5" class="table-container">
                   <h4>Billing Adress</h4>
                       <hr>
-                      <p> 18/10 Nguyễn Thái Sơn , Phường 3 , Gò Vấp , TP Hồ Chí Minh
-                          <p>Mobile:(123) 456-789</p>
+                      <p class="ab"> 12 Nguyễn Văn Bảo, P.4, Q. Gò Vấp, TP.HCM</p>
+                          <p class="abc">Điện thoại:(123) 456-789</p>
                       </p>
                       <i class="bx bxs-edit"></i>
                       <input  class="pd"type="submit" value="Edit Address">
@@ -224,37 +225,31 @@
                   
                   <form class="row g-3">
                       <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">First Name*</label>
-                        <input type="email" class="form-control" id="inputFirstName" placeholder="First Name">
+                        <label for="inputEmail4" class="form-label">Họ tên*</label>
+                        <input type="email" class="form-control" id="inputFirstName" placeholder="Họ tên">
                       </div>
-                      <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Last Name*</label>
-                        <input type="password" class="form-control" id="inputLastName"placeholder="Last Name">
-                      </div>
+                      
+                      
                       <div class="col-12">
-                        <label for="inputAddress" class="form-label">Display Name*</label>
-                        <input type="text" class="form-control" id="inputDisplayName" placeholder="Display Name">
-                      </div>
-                      <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Email Address*</label>
-                        <input type="text" class="form-control" id="inputEmailAddress" placeholder="Email Address">
+                        <label for="inputAddress2" class="form-label">Địa chỉ Email*</label>
+                        <input type="text" class="form-control" id="inputEmailAddress" placeholder="Địa chỉ Email">
                       </div>
                       <h4>Password Changes</h4>
                       <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Current Password</label>
-                        <input type="text" class="form-control" id="inputCurrentPassword"placeholder="Current Password">
+                        <label for="inputCity" class="form-label">Mật khẩu hiện tại</label>
+                        <input type="text" class="form-control" id="inputCurrentPassword"placeholder="Mật khẩu hiện tại">
                       </div>
                       <div class="col-md-4">
-                        <label for="inputState" class="form-label">New Password</label>
-                        <input type="text" class="form-control" id="inputNewPassword"placeholder="New Password">
+                        <label for="inputState" class="form-label">Mật khẩu mới</label>
+                        <input type="text" class="form-control" id="inputNewPassword"placeholder="Mật khẩu mới">
                       </div>
                       <div class="col-md-6">
-                        <label for="inputZip" class="form-label">Confilm Password</label>
-                        <input type="text" class="form-control" id="inputConfilmPassword"placeholder="Confilm Password">
+                        <label for="inputZip" class="form-label">Xác nhận mật khẩu*</label>
+                        <input type="text" class="form-control" id="inputConfilmPassword"placeholder="Xác nhận mật khẩu">
                       </div>
                      
                       <div class="col-12">
-                        <button class="pd"type="submit" class="btn btn-primary">Save Changes</button>
+                        <button class="pd"type="submit" class="btn btn-primary">Lưu thông tin</button>
                       </div>
                     </form>
                   
@@ -315,10 +310,11 @@
 
               <div class="col">
                 <h3 class="Title_footer">VỀ JEWEL SHINE</h3>
-                <a class="footer_tag" href="#">Trang chủ</a> <br>
-                <a class="footer_tag" href="#">Sản phẩm</a><br>
-                <a class="footer_tag" href="#">Giới thiệu</a><br>
-                <a class="footer_tag" href="#">Liên hệ</a><br>
+                <a class="footer_tag" href="home.html">Trang chủ</a> <br>
+                <a class="footer_tag" href="product1.html">Sản phẩm</a><br>
+                <a class="footer_tag" href="about.html">Giới thiệu</a><br>
+                <a class="footer_tag" href="index_blog.html">Blog</a><br>
+                <a class="footer_tag" href="contact.html">Liên hệ</a><br>
               </div>
               <div class="col">
                 <h3 class="Title_footer">THEO DÕI CHÚNG TÔI</h3>
