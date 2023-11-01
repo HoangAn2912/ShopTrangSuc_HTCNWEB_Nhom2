@@ -11,7 +11,7 @@ body {
 
 .container {
     max-width: 1920px;
- margin-top: 100px;
+    margin-top: 100px;
 }
 
 
@@ -40,7 +40,7 @@ body {
     font-size: 17px;
 }
 .breadcrumb ul li a:hover {
-    color: #7fcbc9;
+    color: #E8BB73;
     font-weight: bold;
     font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
 }
@@ -60,10 +60,11 @@ article {
     display: flex;
 }
 .title{
-    text-align: center;
+    text-align: justify;;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#7fcbc9;
+    color:#E8BB73;
     font-weight: 500;
+    font-size: 2.8rem;
    
 }
 .thumbnail {
@@ -77,9 +78,9 @@ article {
     padding-left: 20px;
 }
 .blog-item-name {
-    color: #7fcbc9;
+    color: #E8BB73;
     font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
-    font-size: 22px;
+    font-size: 2.8rem;
     letter-spacing: 0.5px;
     word-spacing: 5px;
     padding-bottom: 10px;
@@ -99,9 +100,9 @@ article {
     width: 120px;
     height: 37px ;
     border: 1px solid red;
-    background-color: #7fcbc9;
-    border-color: #7fcbc9;
-    text-align: center;
+    background-color:#E8BB73;
+    border-color: #E8BB73;
+    text-align: justify;;
    
 }
 .btn a {
@@ -167,7 +168,7 @@ aside {
     font-size: 1.14286em;
     padding: 0;
     white-space: inherit;
-    color: #7fcbc9;
+    color: #E8BB73;
 }
 .aside-item .tag-item {
     line-height: 40px;
@@ -180,7 +181,7 @@ aside {
     border-radius: 3px;
 }
 .aside-item .tag-item a {
-    color: #7fcbc9;
+    color:#E8BB73;
     text-decoration: none;
     font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
     font-size: 15px;
@@ -212,7 +213,7 @@ aside {
     word-break: break-word;
     font-weight: 300;
     text-decoration: none;
-    color: #7fcbc9;
+    color: #E8BB73;
 }
 footer {
     width: 100%;
@@ -238,7 +239,7 @@ footer .ft {
     margin-inline-end: 0px;
 }
 .ft a.xs-block {
-    color: #7fcbc9;
+    color: #E8BB73;
     margin: 0 5px;
 }
 .ft a.xs-block:hover {
