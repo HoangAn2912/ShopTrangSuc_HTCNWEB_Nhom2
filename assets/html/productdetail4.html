@@ -13,10 +13,12 @@
     <style>
         .mota{
   margin-top: 60px;
-  border:1px solid;
-  border-radius: 0 0 5px 5px;
+  border: 2px solid rgb(207, 202, 195);
+  border-radius: 5px 5px 10px 10px;
+  padding: 5px;
 
 }
+
 .product {
     justify-self: baseline  ;
     margin: 0;
@@ -30,13 +32,17 @@
  
 }
 .mota-tieude{
-  background-color: #6c757d;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
+  border-bottom: 2px solid rgb(213, 209, 204);
+  border-radius: 5px 5px 5px 5px;
 }
 .mota-body{
-  
-  font-size: 1.2rem;
+  margin-left: 0;
+}
+.mota-content{
+  padding-left: 20px;
+  font-size: 1.7rem;
 }
 .mota-content:nth-child(odd){
   background-color: hsl(0,0%,94.9%);
@@ -44,7 +50,32 @@
 .product-name {
   transform: translate(0%,-50%);
 }
-    </style>
+.datmua{
+  margin-top: 16px;
+ 
+}
+.button1 {
+  margin-left: 2%;
+  width: 45%;
+  padding: 22px;
+  color: #AD2A36;
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: #E9BA9A;
+  border: 2px solid #a43820;
+}
+.button2{
+  margin-left: 5%;
+  width: 45%;
+  padding: 22px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  background-color:#2B7873;
+  border: 2px solid black;
+
+}
+</style>
 </head>
 <body>
     <div class="container">
@@ -54,7 +85,7 @@
             <img src="../img/logo.png" alt="Logo Website">
         </a>
         <nav class="navbar">
-          <a href="../html/home.html">Trang chủ</a>
+            <a href="../html/home.html">Trang chủ</a>
             <a href="../html/product1.html">Sản phẩm</a>
             <a href="../html/about.html">Giới thiệu</a>
             <a href="../html/index_blog.html">Blog</a>
@@ -142,20 +173,12 @@
 
         <div class="row">
 
-          <div class="col-lg-3">
-
-            <h3 class="my-4"><i class="fa-solid fa-bars" style="color: #202124;"></i> Danh Muc</h3>
-            <div class="list-group">
-              <a href="" class="list-group-item">Nhan</a>
-              <a href="" class="list-group-item">Day chuyen</a>
-              <a href="" class="list-group-item">Da quy</a>
-              <a href="" class="list-group-item">Vong</a>
-            </div>
+          
 
           </div>
 
 
-          <div class="col-lg-9">
+          <div class="col-lg">
             <div class="row">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -166,26 +189,16 @@
               </nav>
             </div>
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-1">
                 <img src="../img/nhan4_1.png" alt="" style="max-width: 100px;" class="img-thumbnail">
                 <img src="../img/nhan4_2.png" alt="" style="max-width: 100px;" class="img-thumbnail">
                 <img src="../img/nhan4_3.png" alt="" style="max-width: 100px;" class="img-thumbnail">
 
               </div>
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <img src="../img/nhan4.png" alt="" style="background-color: hsl(0,10%,92.82%);" class="img-fluid">
 
-                <div class="mota">
-                  <div class="mota-tieude">Thông số & Mô tả</div>
-                  <div class="mota-body">
-                    <div class="mota-content">Trọng lượng tham khảo: 10g</div>
-                    <div class="mota-content">Loại đá chính: đá cuội</div>
-                    <div class="mota-content">Màu chính: Trắng</div>
-                    <div class="mota-content">Hình dạng: Tròn</div>
-                    <div class="mota-content">Thương hiệu: PNJ</div>
-
-                  </div>
-                </div>
+                
 
               </div>
 
@@ -194,22 +207,22 @@
                     style="color: #dfcb96; font-size: 4rem; width: 40px; float: left;"></i>
                   <h2 class="product-name" style="width: 80%; margin: 0 65px">Nhẫn Vàng trắng 10K đính đá</h2>
                 </div>
-                <div class="icon"> <i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
+                <div class="icon" style="font-size: 1.8rem; margin-bottom: 10px;"> <i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
                     class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl"
                     style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
                     class="fa-regular fa-star fa-xl"></i> <small
-                    style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small></div>
-                <h3 class="card-price" style="margin-bottom: 6px;">10.000.000$</h3>
+                    style="float: right; font-size: 1.8rem; font-weight: 500;">Đã bán 199</small></div>
+                <h3 class="card-price" style="margin-bottom: 6px; font-size: 1.8rem;">10.000.000$</h3>
                 <h2 style="margin-bottom:6px ;">Chọn kích cỡ </h2>
-                <div class="btn-group" style="margin-bottom: 6px;" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">8</button>
-                  <button type="button" class="btn btn-secondary">9</button>
-                  <button type="button" class="btn btn-secondary">10</button>
-                  <button type="button" class="btn btn-secondary">11</button>
-                  <button type="button" class="btn btn-secondary">12</button>
-                  <button type="button" class="btn btn-secondary">13</button>
+                <div class="btn-group"  style="margin-bottom: 6px; margin-top: 5px;" role="group" aria-label="Basic example">
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">9</button>
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">8</button>
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">10</button>
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">11</button>
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">12</button>
+                  <button type="button" style="font-size: 1.7rem; background-color: #2B7873;" class="btn btn-secondary">13</button>
                 </div>
-                <div class="card h-70" style="margin-bottom: 6px;">
+                <div class="card h-70" style="margin-bottom: 6px; margin-top: 16px;">
                   <h4 class="card-title" style="background-color: #F8F8F8; height: 25px; padding: 10px 10px;">Ưu đãi
                   </h4>
                   <div class="card-body" style="width: fit-content; height: fit-content;">
@@ -231,30 +244,26 @@
                   </div>
 
                 </div>
-                <div class="btn-group" style="width: 100%; margin-bottom: 4px;">
-                  <button class="btn btn-danger">
-                    <span>
-                      <h3>Mua ngay</h3>
-                      <h4>Miễn phí giao hàng, giao tận nhà, thanh toán nhanh chóng &#9829; &#9829; &#9829; &#9829; </h4>
-                    </span>
-                  </button>
-                </div>
-                <div class="btn-group" style="width: 100%;">
-                  <button class="btn btn-primary" style="margin-right: 3px;">
-                    <span>
-                      <h3>MUA TRẢ GÓP</h3>
-                      <h4>Chỉ từ 10.000$ / tháng</h4>
-                    </span>
-
-                  </button>
-                  <button class="btn btn-primary">
-                    <span>
-                      <h3>MƯỢN</h3>
-                      <h4>Chỉ từ 10.000$ / tháng</h4>
-                    </span>
-                  </button>
+                <div class="datmua row">
+                  <button class="button1 col-md-6" type="button"> <i class="fa-solid fa-cart-shopping" style="color: #ad2a36;"></i>  Thêm vào giỏ hàng</button> 
+                  <button class="button2 col-md-6" type="button"><i class="fa-solid fa-person-biking" style="color: #ade5c5;"></i> Mua ngay</button>
                 </div>
 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mota">
+                  <h3 class="mota-tieude" >Thông số & Mô tả </h3>
+                  <div class="mota-body">
+                    <div class="mota-content">Trọng lượng tham khảo: 10g</div>
+                    <div class="mota-content">Loại đá chính: đá cuội</div>
+                    <div class="mota-content">Màu chính: Trắng</div>
+                    <div class="mota-content">Hình dạng: Tròn</div>
+                    <div class="mota-content">Thương hiệu: PNJ</div>
+
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -296,24 +305,24 @@
                 <td class="section__pd">21015931</td>
               </tr>
               <tr>
-                <td class="section__pd">1</td>
-                <td class="section__pd">Nguyễn Phúc Hoàng An</td>
-                <td class="section__pd">21015931</td>
+                <td class="section__pd">2</td>
+                <td class="section__pd">Nguyễn Thị Minh Anh</td>
+                <td class="section__pd">21048501</td>
               </tr>
               <tr>
-                <td class="section__pd">1</td>
-                <td class="section__pd">Nguyễn Phúc Hoàng An</td>
-                <td class="section__pd">21015931</td>
+                <td class="section__pd">3</td>
+                <td class="section__pd">Trần Thị Bích Phượng</td>
+                <td class="section__pd">21060651</td>
               </tr>
               <tr>
-                <td class="section__pd">1</td>
-                <td class="section__pd">Nguyễn Phúc Hoàng An</td>
-                <td class="section__pd">21015931</td>
+                <td class="section__pd">4</td>
+                <td class="section__pd">Nguyễn Duy Bảo</td>
+                <td class="section__pd">21044391</td>
               </tr>
               <tr>
-                <td class="section__pd">1</td>
-                <td class="section__pd">Nguyễn Phúc Hoàng An</td>
-                <td class="section__pd">21015931</td>
+                <td class="section__pd">5</td>
+                <td class="section__pd">Phan Ngọc Thùy</td>
+                <td class="section__pd">21061781</td>
               </tr>
               
             </table>
@@ -326,10 +335,11 @@
 
               <div class="col">
                 <h3 class="Title_footer">VỀ JEWEL SHINE</h3>
-                <a class="footer_tag" href="../html/home.html">Trang chủ</a> <br>
-                <a class="footer_tag" href="../html/product1.html">Sản phẩm</a><br>
-                <a class="footer_tag" href="../html/about.html">Giới thiệu</a><br>
-                <a class="footer_tag" href="../html/contact.html">Liên hệ</a><br>
+                <a class="footer_tag" href="home.html">Trang chủ</a> <br>
+                                        <a class="footer_tag" href="product1.html">Sản phẩm</a><br>
+                                        <a class="footer_tag" href="about.html">Giới thiệu</a><br>
+                                        <a class="footer_tag" href="index_blog.html">Blog</a><br>
+                       <a class="footer_tag" href="contact.html">Liên hệ</a><br>
               </div>
               <div class="col">
                 <h3 class="Title_footer">THEO DÕI CHÚNG TÔI</h3>
