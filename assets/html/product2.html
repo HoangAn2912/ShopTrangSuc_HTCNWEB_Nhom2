@@ -13,6 +13,9 @@
     <script src="../css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        .list-group-item{
+            font-size: 1.7rem;
+        }
         .home-page{
    
  
@@ -24,27 +27,33 @@ justify-content: baseline;
 
 }
 .home-page-btn{
+    border: 1px solid rgb(181, 121, 68);
    border-radius: 5px;
-  height: 36px;
-  width: 36px;
+  height: 50px;
+  width: 50px;
   padding-top: 10px;
-  background-color: #ccc;
+
+font-size: 2.2rem;
   justify-content: baseline;
   display: inline-block;
- margin: 2px;
+ margin: 5px;
  color: saddlebrown;
 }
 .home-page-number-current{
-   font-size: 1.6rem;
+   font-size: 2.2rem;
    justify-content: baseline;
    margin-left: 5px;
 }
 
 .home-page-number-all{
    margin-right: 5px;
+   font-size: 2.2rem;
 }
 .card-title-name:hover{
   color:salmon ;
+}
+.breadcrumb{
+    font-size: 1.4rem;
 }
     </style>
 </head>
@@ -151,10 +160,10 @@ justify-content: baseline;
 
                     <h3 class="my-4"><i class="fa-solid fa-bars" style="color: #202124;"></i> Danh Muc</h3>
                     <div class="list-group">
-                        <a href="" class="list-group-item">Nhan</a>
-                        <a href="" class="list-group-item">Day chuyen</a>
-                        <a href="" class="list-group-item">Da quy</a>
-                        <a href="" class="list-group-item">Vong</a>
+                        <a href="product1.html" class="list-group-item">Nhẫn</a>
+                        <a href="product2.html" class="list-group-item">Dây chuyền</a>
+                        <a href="product3.html" class="list-group-item">Vòng</a>
+                     
                     </div>
 
                 </div>
@@ -165,8 +174,8 @@ justify-content: baseline;
 
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="../html/product1.html">Sản Phẩm</a></li>
+                                <li class="breadcrumb-item"><a href="home.html">Trang chủ</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Dây chuyền</li>
 
                             </ol>
                         </nav>
@@ -175,19 +184,19 @@ justify-content: baseline;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail2.html"><img class="card-img-top" src="../img/nhan1.png"
+                                <a href="daychuyen1.html"><img class="card-img-top" src="../img/daychuyen1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail2.html" class="card-title-name">Nhẫn Vàng trắng 10K đính đá ECZ PNJ XMXMW060984</a>
+                                        <a href="daychuyen1.html" class="card-title-name">Dây chuyền Vàng trắng Ý 18K PNJ 0000W000949                                        </a>
                                     </h4>
-                                    <h5 class="card-title-price">4.190.000đ
+                                    <h5 class="card-title-price">33.468.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn rất đẹp</p>
+                                    <p class="card-text">Dây chuyền xịn và đẹp!</p>
 
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail2.html"
+                                    <button class="card-btn"><a href="daychuyen1.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -200,19 +209,67 @@ justify-content: baseline;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail1.html"><img class="card-img-top" src="../img/nhan2.png"
+                                <a href="daychuyen2.html"><img class="card-img-top" src="../img/daychuyen2.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail1.html" class="card-title-name">Nhẫn Kim cương Vàng 14K PNJ DDDDH060002
+                                        <a href="daychuyen2.html" class="card-title-name">Dây chuyền Vàng trắng Ý 18K PNJ Unisex 0000W000948</a>
+                                    </h4>
+                                    <h5 class="card-title-price">34.994.000đ
+                                    </h5>
+                                    <p class="card-text">Vòng rất mê!</p>
+
+                                </div>
+                                <div class="card h-100">
+                                    <button class="card-btn"><a href="daychuyen2.html"
+                                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                                </div>
+                                <div class="card-footer">
+                                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                                        &#9734;</small> <small
+                                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="daychuyen3.html"><img class="card-img-top" src="../img/daychuyen3.png"
+                                        alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="daychuyen3.html" class="card-title-name">Dây chuyền Vàng Trắng Ý 18K PNJ 0000W000983</a>
+                                    </h4>
+                                    <h5 class="card-title-price">19.271.000đ</h5>
+                                    <p class="card-text">Vòng phong thủy!</p>
+                                </div>
+                                <div class="card h-100">
+                                    <button class="card-btn"><a href="daychuyen3.html"
+                                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                                </div>
+                                <div class="card-footer">
+                                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                                        &#9734;</small> <small
+                                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="daychuyen4.html"><img class="card-img-top" src="../img/daychuyen4_1.png"
+                                        alt=""></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="daychuyen4.html" class="card-title-name">Dây chuyền Bạc Ý PNJSilver 0000W060094
                                         </a>
                                     </h4>
-                                    <h5 class="card-title-price">22.900.000đ</h5>
-                                    <p class="card-text">Nhẫn rất xinh</p>
-
+                                    <h5 class="card-title-price">1.795.000đ</h5>
+                                    <p class="card-text">Dây chuyền đẹp á!</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail1.html"
+                                    <button class="card-btn"><a href="daychuyen4.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -225,67 +282,18 @@ justify-content: baseline;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail3.html"><img class="card-img-top" src="../img/nhan3.png"
+                                <a href="daychuyen5.html"><img class="card-img-top" src="../img/daychuyen5_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail3.html" class="card-title-name">Nhẫn Vàng 18K đính đá CZ PNJ XMXMY006500
-                                        </a>
+                                        <a href="daychuyen5.html" class="card-title-name">Dây chuyền Bạc Ý PNJSilver 0000W060093</a>
                                     </h4>
-                                    <h5 class="card-title-price">11.872.000đ</h5>
-                                    <p class="card-text">Nhẫn cho người giàu!</p>
-                                </div>
-                                <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail3.html"
-                                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
-                                </div>
-                                <div class="card-footer">
-                                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
-                                        &#9734;</small> <small
-                                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="../html/productdetail4.html"><img class="card-img-top" src="../img/nhan4.png"
-                                        alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="../html/productdetail4.html" class="card-title-name">Nhẫn Kim cương Vàng trắng 14K PNJ DDDDW007940
-                                        </a>
-                                    </h4>
-                                    <h5 class="card-title-price">34.163.100đ</h5>
-                                    <p class="card-text">Nhẫn đẹp á!</p>
-                                </div>
-                                <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail4.html"
-                                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
-                                </div>
-                                <div class="card-footer">
-                                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
-                                        &#9734;</small> <small
-                                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="../html/productdetail5.html"><img class="card-img-top" src="../img/nhan5.png"
-                                        alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="../html/productdetail5.html" class="card-title-name">Nhẫn Vàng 18K đính đá Ruby PNJ RBXMX000012</a>
-                                    </h4>
-                                    <h5 class="card-title-price">16.538.000đ
+                                    <h5 class="card-title-price">1.595.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn đẹp</p>
+                                    <p class="card-text">Dây chuyền bạc!</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail5.html"
+                                    <button class="card-btn"><a href="daychuyen5.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -298,18 +306,19 @@ justify-content: baseline;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail6.html"><img class="card-img-top" src="../img/nhan6.png"
+                                <a href="daychuyen6.html"><img class="card-img-top" src="../img/daychuyen6_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail6.html" class="card-title-name">Nhẫn nam Vàng trắng 10K đính đá ECZ PNJ XMXMW002620</a>
+                                        <a href="daychuyen6.html" class="card-title-name">
+                                            Dây chuyền Bạc Ý PNJSilver 0000W060096</a>
                                     </h4>
-                                    <h5 class="card-title-price">11.370.000đ
+                                    <h5 class="card-title-price">1.995.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn Nam Kim cương Vàng trắng 14K</p>
+                                    <p class="card-text">Dây này đẹp</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail6.html"
+                                    <button class="card-btn"><a href="daychuyen6.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -326,7 +335,7 @@ justify-content: baseline;
                         <div class="home-page">
                             <a href="../html/product1.html"><i class="home-page-btn fa-solid fa-angles-left"></i></a>
                             <a href="../html/product1.html"> <i class="home-page-btn fa-solid fa-angle-left"></i></a>
-                            <span class="home-page-number-current">2</span> / <span
+                            <span class="home-page-number-current">2</span> <span style="font-size: 2.2rem;">/</span> <span
                                 class="home-page-number-all">3</span>
                             <a href="../html/product3.html"> <i class="home-page-btn fa-solid fa-angle-right"></i></a>
                             <a href="../html/product3.html"> <i class="home-page-btn fa-solid fa-angles-right"></i></a>
