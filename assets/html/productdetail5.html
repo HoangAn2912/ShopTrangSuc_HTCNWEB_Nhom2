@@ -76,6 +76,30 @@
 
 }
 </style>
+<script>
+    function doianh1()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/nhan5_1.png'
+      setTimeout=5000;
+  }
+  function doianh2()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/nhan5_2.png'
+      setTimeout=5000;
+      
+  }
+  function doianh3()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/nhan5_3.png'
+      setTimeout=5000;
+  }
+</script>
 </head>
 <body>
     <div class="container">
@@ -190,13 +214,13 @@
             </div>
             <div class="row">
               <div class="col-md-1">
-                <img src="../img/nhan5_1.png" alt="" style="max-width: 100px;" class="img-thumbnail">
-                <img src="../img/nhan5_2.png" alt="" style="max-width: 100px;" class="img-thumbnail">
-                <img src="../img/nhan5_3.png" alt="" style="max-width: 100px;" class="img-thumbnail">
+                <img src="../img/nhan5_1.png" onclick="doianh1()" alt="" style="max-width: 100px;" class="img-thumbnail">
+                <img src="../img/nhan5_2.png" onclick="doianh2()" alt="" style="max-width: 100px;" class="img-thumbnail">
+                <img src="../img/nhan5_3.png" onclick="doianh3()" alt="" style="max-width: 100px;" class="img-thumbnail">
 
               </div>
               <div class="col-md-5">
-                <img src="../img/nhan5.png" alt="" style="background-color: hsl(0,10%,92.82%);" class="img-fluid">
+                <img src="../img/nhan5.png" id="anh" alt="" style="background-color: hsl(0,10%,92.82%);" class="img-fluid">
 
                 
 
