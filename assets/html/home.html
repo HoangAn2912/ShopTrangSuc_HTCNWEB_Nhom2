@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logo_tab.pngư" type="image/x-icon">
+    <link rel="icon" href="../img/logo_tab.png" type="image/x-icon">
     <title>Trang chủ</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/home.css"> 
+<link rel="stylesheet" href="../html/index_blog.html">
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="../css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
@@ -23,13 +24,15 @@
             <a href="home.html">Trang chủ</a>
             <a href="product1.html">Sản phẩm</a>
             <a href="about.html">Giới thiệu</a>
-            <a href="blog.html">Blog</a>
+            <a href="index_blog.html">Blog</a>
             <a href="contact.html">Liên hệ</a>
 
         </nav>
-        <div class="icons">
+        <div class="icons" style="display: flex;">
             <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <a href="" class="header__cart-note">4</a>
+            </div>
             <div class="fas fa-solid fa-user" id="user-btn"></div>
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
@@ -44,7 +47,7 @@
                 <span class="fas fa-items"></span>
                 <img src="../img/logo-web.png" alt="">
                 <div class="content">
-                    <h3>cart item 01</h3>
+                    <h3>Nhẫn Vàng Trắng 10K Đính Đá</h3>
                     <div class="price">1.000.000VND</div>
                 </div>
                 <button type="button" class="close-ds" disabled aria-label="Close">x</button>
@@ -85,7 +88,7 @@
                 </div>
                 <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
+            <a href="cart.html" id="btn">Kiểm tra</a>
         </div>
 
         <div class="user-content">
@@ -93,10 +96,10 @@
                 <a href="account.html" class="user-item-content">Trang cá nhân</a>
             </div>
             <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
+                <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
             </div>
             <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
+                <a href="login_1.html" class="user-item-content">Đăng nhập</a>
             </div>
         </div>
     </header>
@@ -115,13 +118,13 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../img/slider1.png" alt="slide1" class="d-block w-100">
+        <img src="../img/slide1.png" alt="slide1" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="../img/test.png" alt="slide2" class="d-block w-100">
+        <img src="../img/slide2.png" alt="slide2" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="../img/slider1.png" alt="Slide3" class="d-block w-100">
+        <img src="../img/slide3.png" alt="Slide3" class="d-block w-100">
       </div>
     </div>
 
@@ -148,167 +151,154 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan1.png" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn Vàng trắng 10K đính đá</a>
-                  </h4>
-                  <h5 class="card-title-price">10.000.000$</h5>
-                  <p class="card-text">Nhẫn rất đẹp</p>
-                 
-              </div>
-              <div class="card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>  
-                   <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan2.png" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn Kim cương Vàng 14K</a>
-                  </h4>
-                  <h5 class="card-title-price">999.999.999$</h5>
-                  <p class="card-text">Nhẫn rất xinh</p>
-                  
-              </div>
-              <div class=" card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                  <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan3.png" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn Vàng 18K đính đá</a>
-                  </h4>
-                  <h5 class="card-title-price">888.888.888$</h5>
-                  <p class="card-text">Nhẫn cho người giàu!</p>
-              </div>
-              <div class="card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                  <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan4.png" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn Vàng 14K đính đá Moon</a>
-                  </h4>
-                  <h5 class="card-title-price">7.122.003$</h5>
-                  <p class="card-text">Nhẫn cho ai yêu màu hồng!</p>
-              </div>
-              <div class="card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                  <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan5.jpg" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn nhựa</a>
-                  </h4>
-                  <h5 class="card-title-price">1$</h5>
-                  <p class="card-text">Nhẫn dành cho sinh viên nghèo</p>
-              </div>
-              <div class="card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>  
-                   <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="../img/nhan6.png" alt=""></a>
-              <div class="card-body">
-                  <h4 class="card-title">
-                      <a href="#" class="card-title-name">Nhẫn nhiều tiền</a>
-                  </h4>
-                  <h5 class="card-title-price">1.000.000.000$</h5>
-                  <p class="card-text">Nhẫn cho đại gia</p>
-              </div>
-              <div class="card h-100">
-                  <button class="card-btn">Mua ngay</button>
-              </div>
-              <div class="card-footer">
-                  <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                  <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../img/nhan6.png" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#" class="card-title-name">Nhẫn nhiều tiền</a>
-                </h4>
-                <h5 class="card-title-price">1.000.000.000$</h5>
-                <p class="card-text">Nhẫn cho đại gia</p>
-            </div>
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                <button class="card-btn">Mua ngay</button>
-            </div>
-            <div class="card-footer">
-                <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                <a href="../html/productdetail2.html"><img class="card-img-top" src="../img/nhan1.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail2.html" class="card-title-name">Nhẫn Vàng trắng 10K đính đá ECZ PNJ XMXMW060984</a>
+                    </h4>
+                    <h5 class="card-title-price">4.190.000đ
+                    </h5>
+                    <p class="card-text">Nhẫn rất đẹp</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail2.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="../img/nhan6.png" alt=""></a>
-          <div class="card-body">
-              <h4 class="card-title">
-                  <a href="#" class="card-title-name">Nhẫn nhiều tiền</a>
-              </h4>
-              <h5 class="card-title-price">1.000.000.000$</h5>
-              <p class="card-text">Nhẫn cho đại gia</p>
-          </div>
-          <div class="card h-100">
-              <button class="card-btn">Mua ngay</button>
-          </div>
-          <div class="card-footer">
-              <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-              <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
-          </div>
-      </div>
-    </div>
 
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="../html/productdetail1.html"><img class="card-img-top" src="../img/nhan2.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail1.html" class="card-title-name">Nhẫn Kim cương Vàng 14K PNJ DDDDH060002
+                        </a>
+                    </h4>
+                    <h5 class="card-title-price">22.900.000đ</h5>
+                    <p class="card-text">Nhẫn rất xinh</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail1.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="../html/productdetail3.html"><img class="card-img-top" src="../img/nhan3.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail3.html" class="card-title-name">Nhẫn Vàng 18K đính đá CZ PNJ XMXMY006500
+                        </a>
+                    </h4>
+                    <h5 class="card-title-price">11.872.000đ</h5>
+                    <p class="card-text">Nhẫn cho người giàu!</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail3.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="../html/productdetail4.html"><img class="card-img-top" src="../img/nhan4.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail4.html" class="card-title-name">Nhẫn Kim cương Vàng trắng 14K PNJ DDDDW007940
+                        </a>
+                    </h4>
+                    <h5 class="card-title-price">34.163.100đ</h5>
+                    <p class="card-text">Nhẫn đẹp á!</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail4.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="../html/productdetail5.html"><img class="card-img-top" src="../img/nhan5.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail5.html" class="card-title-name">Nhẫn Vàng 18K đính đá Ruby PNJ RBXMX000012</a>
+                    </h4>
+                    <h5 class="card-title-price">16.538.000đ
+                    </h5>
+                    <p class="card-text">Nhẫn đẹp</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail5.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="../html/productdetail6.html"><img class="card-img-top" src="../img/nhan6.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail6.html" class="card-title-name">Nhẫn nam Vàng trắng 10K đính đá ECZ PNJ XMXMW002620</a>
+                    </h4>
+                    <h5 class="card-title-price">11.370.000đ
+                    </h5>
+                    <p class="card-text">Nhẫn Nam Kim cương Vàng trắng 14K</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail6.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
+            </div>
+        </div>
+
+    
     </div>
     <div class="product_look">
         <a href="../html/product1.html">Xem thêm</a>
@@ -328,103 +318,193 @@
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../img/nhan1.png" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#" class="card-title-name">Nhẫn Vàng trắng 10K đính đá</a>
-                </h4>
-                <h5 class="card-title-price">10.000.000$</h5>
-                <p class="card-text">Nhẫn rất đẹp</p>
-               
-            </div>
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                <button class="card-btn">Mua ngay</button>
-            </div>
-            <div class="card-footer">
-                <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                <a href="../html/productdetail2.html"><img class="card-img-top" src="../img/nhan1.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail2.html" class="card-title-name">Nhẫn Vàng trắng 10K đính đá ECZ PNJ XMXMW060984</a>
+                    </h4>
+                    <h5 class="card-title-price">4.190.000đ
+                    </h5>
+                    <p class="card-text">Nhẫn rất đẹp</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail2.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../img/nhan2.png" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#" class="card-title-name">Nhẫn Kim cương Vàng 14K</a>
-                </h4>
-                <h5 class="card-title-price">999.999.999$</h5>
-                <p class="card-text">Nhẫn rất xinh</p>
-                
-            </div>
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                <button class="card-btn">Mua ngay</button>
-            </div>
-            <div class="card-footer">
-                <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                <a href="../html/productdetail1.html"><img class="card-img-top" src="../img/nhan2.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail1.html" class="card-title-name">Nhẫn Kim cương Vàng 14K PNJ DDDDH060002
+                        </a>
+                    </h4>
+                    <h5 class="card-title-price">22.900.000đ</h5>
+                    <p class="card-text">Nhẫn rất xinh</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail1.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../img/nhan3.png" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#" class="card-title-name">Nhẫn Vàng 18K đính đá</a>
-                </h4>
-                <h5 class="card-title-price">888.888.888$</h5>
-                <p class="card-text">Nhẫn cho người giàu!</p>
-            </div>
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                <button class="card-btn">Mua ngay</button>
-            </div>
-            <div class="card-footer">
-                <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>   
-                <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                <a href="../html/productdetail3.html"><img class="card-img-top" src="../img/nhan3.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="../html/productdetail3.html" class="card-title-name">Nhẫn Vàng 18K đính đá CZ PNJ XMXMY006500
+                        </a>
+                    </h4>
+                    <h5 class="card-title-price">11.872.000đ</h5>
+                    <p class="card-text">Nhẫn cho người giàu!</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="../html/productdetail3.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
 
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../img/nhan4.png" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#" class="card-title-name">Nhẫn Vàng 14K đính đá Moon</a>
-                </h4>
-                <h5 class="card-title-price">7.122.003$</h5>
-                <p class="card-text">Nhẫn cho ai yêu màu hồng!</p>
-            </div>
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                <button class="card-btn">Mua ngay</button>
-            </div>
-            <div class="card-footer">
-                <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>  
-                <small style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                <a href="daychuyen1.html"><img class="card-img-top" src="../img/daychuyen1.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="daychuyen1.html" class="card-title-name">Dây chuyền Vàng trắng Ý 18K PNJ 0000W000949                                        </a>
+                    </h4>
+                    <h5 class="card-title-price">33.468.000đ
+                    </h5>
+                    <p class="card-text">Dây chuyền xịn và đẹp!</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="daychuyen1.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
             </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="daychuyen2.html"><img class="card-img-top" src="../img/daychuyen2.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="daychuyen2.html" class="card-title-name">Dây chuyền Vàng trắng Ý 18K PNJ Unisex 0000W000948</a>
+                    </h4>
+                    <h5 class="card-title-price">34.994.000đ
+                    </h5>
+                    <p class="card-text">Vòng rất mê!</p>
+
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="daychuyen2.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="daychuyen3.html"><img class="card-img-top" src="../img/daychuyen3.png"
+                        alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="daychuyen3.html" class="card-title-name">Dây chuyền Vàng Trắng Ý 18K PNJ 0000W000983</a>
+                    </h4>
+                    <h5 class="card-title-price">19.271.000đ</h5>
+                    <p class="card-text">Vòng phong thủy!</p>
+                </div>
+                <div class="card h-100">
+                    <button class="card-btn"><a href="daychuyen3.html"
+                            style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
+                </div>
+                <div class="card-footer">
+                    <small style="font-size: 1.5rem;" class="text-muted">&#9733; &#9733; &#9733; &#9733;
+                        &#9734;</small> <small
+                        style="float: right; font-size: 1.5rem; font-weight: 500;">Đã bán 199</small>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
 <div class="product_look">
     <a href="../html/product1.html">Xem thêm</a>
 </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="col-transform">
-                <img src="../img/testimonials-bg.jpg" alt="" style="width: 100%; height: 450px;">
-            </div>
+<div class="container-fluid" style="margin-top: -50px;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/slide7.png" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slide5.png" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slide4.png" class="d-block w-100" alt="...">
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </div>
 
 <div class="container">
@@ -444,22 +524,24 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog.html"><img src="../img/blog.png" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
                         <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 10/04/2022
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Dây chuyền kim cương quý nhất không chỉ đơn thuần là một món trang sức, mà nó là
+                            biểu tượng
+                            của sự sang trọng, đẳng cấp và vẻ đẹp hoàn hảo. Với sự kết hợp tinh tế giữa kim
+                            cương tinh khiết
+                            và thiết kế đỉnh cao, dây chuyền này đã tạo nên...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog.html" >Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -468,22 +550,24 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog1.html"><img src="../img/blog1.jpg" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
-                        <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
+                        <p class="blog-item-name">Lựa dây chuyền hợp màu da</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 12/04/2022
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Dây chuyền hợp màu da là một phần không thể thiếu của trang sức, mang trong mình sự
+                            thanh lịch
+                            và cá tính độc đáo. Được thiết kế để hoàn hảo kết hợp với màu da tự nhiên của bạn,
+                            dây chuyền này không
+                            chỉ là một món trang sức, mà còn là ...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog1.html">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -492,22 +576,22 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog2.html"><img src="../img/blog2.jpg" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
-                        <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
+                        <p class="blog-item-name">Phong cách phối đồ ấn tượng</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 30/04/2022
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Phong cách phối đồ ấn tượng là một biểu đạt cá nhân độc đáo, một cách thể hiện bản thân và 
+                            sự sáng tạo thông qua việc lựa chọn và kết hợp trang phục. Nó không chỉ là cách bạn mặc, mà 
+                            còn là cách bạn diễn đạt cá tính, thể hiện sự tự tin và gây ấn tượng mạnh mẽ với người khác...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog2.html">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -516,22 +600,24 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog3.html"><img src="../img/blog3.jpg" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
-                        <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
+                        <p class="blog-item-name">Bộ sưu tập trang sức vàng</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 04/09/2023
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Trang sức vàng luôn là biểu tượng của vẻ đẹp và quý phái không bao giờ lỗi mốt. Bất
+                            kỳ ai yêu thích
+                            thế giới thời trang và trang sức đều hiểu giá trị tinh túy của vàng. Bộ sưu tập
+                            trang sức vàng đang
+                            chào đón bạn vào một ...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog3.html">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -540,22 +626,24 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog4.html"><img src="../img/blog4.jpg" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
-                        <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
+                        <p class="blog-item-name">Dùng trang sức nào hợp với mình</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 10/12/2023
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Trang sức không chỉ là một phụ kiện đơn thuần, mà còn là một cách thể hiện phong
+                            cách và cá tính
+                            cá nhân. Khi bạn chọn dùng trang sức phù hợp với mình, bạn không chỉ làm tôn lên vẻ
+                            đẹp tự nhiên mà
+                            còn thể hiện ...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog4.html">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -564,30 +652,32 @@
         <div class="col-lg-4 ">
             <div class="card card-h blog-post-item">
                 <figure class="blog-thumb">
-                    <img class="card-img-top" src="../img/index.png" alt="Card image">
+                    <a href="../html/blog5.html"><img src="../img/blog5.jpg" alt=""></a>
                 </figure>
                 
                 <div class="card-body ">
                     <div class="blog-item-info">
-                        <p class="blog-item-name">Dây chuyền kim cương quý nhất</p>
+                        <p class="blog-item-name">Mẹo chọn trang sức sang trọng</p>
                         <div class="post-time">
-                            Viết bởi <span style="color: black;">Admin</span>, Ngày 19/03/2017
+                            Viết bởi <span style="color: black;">Admin</span>, Ngày 27/12/2023
                         </div>
                         <div class="blog-item-summary">
-                            Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong
-                            một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ trở nên đẹp hơn,
-                            ấn...
+                            Trang sức sang trọng không chỉ là những món đồ trang sức mà còn là một tuyên ngôn về
+                            sự lựa chọn tinh
+                            tế, phong cách, và đẳng cấp. Việc lựa chọn trang sức sang trọng đòi hỏi một chút
+                            kiến thức và cảm nhận
+                            về sự tinh xảo, để tạo nên một ...
                         </div>
-                        <div class="btna">
-                            <a href="#">Đọc thêm</a>
+                        <div class="btna" style="background-color: #E8BB73;">
+                            <a href="../html/blog5.html">Đọc thêm</a>
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <div class="product_look" style="margin-top: 30px; margin-bottom: 30px;">
-        <a href="../html/product1.html">Xem thêm</a>
+        <a href="../html/index_blog.html">Xem thêm</a>
     </div>
 
     <div class="support">
