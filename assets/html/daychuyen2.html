@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhẫn vàng</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <script src="../css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .mota {
+      margin-top: 60px;
+      border: 2px solid rgb(207, 202, 195);
+      border-radius: 5px 5px 10px 10px;
+      padding: 5px;
+
+    }
+
+    .product {
+      justify-self: baseline;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-product__breadcrumb-icon {
+      top: 50%;
+      left: 50%;
+      transform: translate(10%, -15%);
+
+    }
+
+    .mota-tieude {
+      font-size: 2.2rem;
+      font-weight: 500;
+      border-bottom: 2px solid rgb(213, 209, 204);
+      border-radius: 5px 5px 5px 5px;
+    }
+
+    .mota-body {
+      margin-left: 0;
+    }
+
+    .mota-content {
+      padding-left: 20px;
+      font-size: 1.7rem;
+    }
+
+    .mota-content:nth-child(odd) {
+      background-color: hsl(0, 0%, 94.9%);
+    }
+
+    .product-name {
+      transform: translate(0%, -50%);
+    }
+
+    .datmua {
+      margin-top: 16px;
+
+    }
+
+    .button1 {
+      margin-left: 2%;
+      width: 45%;
+      padding: 22px;
+      color: #AD2A36;
+      font-weight: 700;
+      font-size: 1.8rem;
+      background-color: #E9BA9A;
+      border: 2px solid #a43820;
+    }
+
+    .button2 {
+      margin-left: 5%;
+      width: 45%;
+      padding: 22px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      background-color: #2B7873;
+      border: 2px solid black;
+
+    }
+  </style>
+  <script>
+      function doianh1()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/daychuyen2_1.png'
+      setTimeout=5000;
+  }
+  function doianh2()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/daychuyen2_2.png'
+      setTimeout=5000;
+      
+  }
+  function doianh3()
+  {
+    var img=document.getElementById('anh');
+   
+      img.src='../img/daychuyen2_3.png'
+      setTimeout=5000;
+  }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../img/logo.png" alt="Logo Website">
+      </a>
+      <nav class="navbar">
+        <a href="../html/home.html">Trang chủ</a>
+        <a href="../html/product1.html">Sản phẩm</a>
+        <a href="../html/about.html">Giới thiệu</a>
+        <a href="../html/index_blog.html">Blog</a>
+        <a href="../html/contact.html">Liên hệ</a>
+
+      </nav>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-solid fa-user" id="user-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Tìm kiếm...">
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-items"></span>
+          <img src="../img/logo-web.png" alt="">
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">1.000.000VND</div>
+          </div>
+          <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-items"></span>
+          <img src="../img/logo-web.png" alt="">
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">1.000.000VND</div>
+          </div>
+          <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-items"></span>
+          <img src="../img/logo-web.png" alt="">
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">1.000.000VND</div>
+          </div>
+          <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+        </div>
+        <div class="cart-item ">
+          <span class="fas fa-items"></span>
+          <img src="../img/logo-web.png" alt="">
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">1.000.000VND</div>
+          </div>
+          <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-items"></span>
+          <img src="../img/logo-web.png" alt="">
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">1.000.000VND</div>
+          </div>
+          <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+        </div>
+        <a href="#" id="btn">Kiểm tra</a>
+      </div>
+
+      <div class="user-content">
+        <div class="user-item">
+          <a href="account.html" class="user-item-content">Trang cá nhân</a>
+        </div>
+        <div class="user-item">
+          <a href="register.html" class="user-item-content">Đăng ký</a>
+        </div>
+        <div class="user-item">
+          <a href="login.html" class="user-item-content">Đăng nhập</a>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- Main -->
+  <div class="container-fluid">
+
+    <div class="container" style="margin-top: 100px;">
+
+      <div class="row">
+
+
+
+      </div>
+
+
+      <div class="col-lg">
+        <div class="row">
+          <nav aria-label="breadcrumb" style="font-size: 1.3rem;">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home.html">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="product2.html">Dây chuyền</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Dây chuyền Vàng trắng Ý 18K PNJ Unisex 0000W000948</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-md-1">
+            <img src="../img/daychuyen2_1.png" onclick="doianh1()" alt="" style="max-width: 100px;" class="img-thumbnail">
+            <img src="../img/daychuyen2_2.png" onclick="doianh2()" alt="" style="max-width: 100px;" class="img-thumbnail">
+            <img src="../img/daychuyen2_3.png" onclick="doianh3()" alt="" style="max-width: 100px;" class="img-thumbnail">
+
+          </div>
+          <div class="col-md-5">
+            <img src="../img/daychuyen2.png" id="anh" alt="" style="background-color: hsl(0,10%,92.82%) ; width: 100%;"
+              class="img-fluid">
+
+
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="product"><i class="fa-solid fa-ring fa-2xl"
+                style="color: #dfcb96; font-size: 4rem; width: 40px; float: left;"></i>
+              <h2 class="product-name" style="width: 80%; margin: 0 65px">Dây chuyền Vàng trắng Ý 18K PNJ Unisex 0000W000948</h2>
+            </div>
+            <div class="icon" style="font-size: 1.8rem; margin-bottom: 10px;"> <i class="fa-solid fa-star fa-xl"
+                style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
+                class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl"
+                style="color: #e0fd08;"></i><i class="fa-regular fa-star fa-xl"></i> <small
+                style="float: right; font-size: 1.8rem; font-weight: 500;">Đã bán 199</small></div>
+            <h3 class="card-price" style="margin-bottom: 6px; font-size: 1.8rem;">34.994.000đ
+            </h3>
+            <h2 style="margin-bottom:6px ;">Chọn kích cỡ </h2>
+            <div class="btn-group" style="margin-bottom: 6px; margin-top: 5px;" role="group" aria-label="Basic example">
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">9</button>
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">8</button>
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">10</button>
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">11</button>
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">12</button>
+              <button type="button" style="font-size: 1.7rem; background-color: #2B7873;"
+                class="btn btn-secondary">13</button>
+            </div>
+            <div class="card h-70" style="margin-bottom: 6px; margin-top: 16px;">
+              <h4 class="card-title" style="background-color: #F8F8F8; height: 25px; padding: 10px 10px;">Ưu đãi
+              </h4>
+              <div class="card-body" style="width: fit-content; height: fit-content;">
+                <p class="option1">
+                  <span>
+                    <img src="../img/momo.png" alt="" width="15%">&nbsp;
+                  </span>
+                  <span style="font-size: 1.4rem;" class="uudai">Mã VuiTrungThu để giảm 10k cho đơn từ
+                    200.000.000VND</span>
+                </p>
+                <p class="option1">
+                  <span>
+                    <img src="../img/bidv.png" style="margin-left: 12px;" alt="" width="10%">&nbsp;
+                  </span>
+                  <span style="font-size: 1.4rem; " class="uudai">Mã VuiTrungThu để giảm 10k cho đơn từ
+                    200.000.000VND</span>
+                </p>
+
+              </div>
+
+            </div>
+            <div class="datmua row">
+              <button class="button1 col-md-6" type="button"> <i class="fa-solid fa-cart-shopping"
+                  style="color: #ad2a36;"></i> Thêm vào giỏ hàng</button>
+              <button class="button2 col-md-6" type="button"><i class="fa-solid fa-person-biking"
+                  style="color: #ade5c5;"></i> Mua ngay</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mota">
+              <h3 class="mota-tieude">Thông số & Mô tả </h3>
+              <div class="mota-body">
+                <div class="mota-content">Trọng lượng tham khảo: 55.54577 phân</div>
+                <div class="mota-content">Hàm lượng chất liệu: 7500</div>
+                <div class="mota-content">Loại đá chính: Không gắn đá</div>
+                <div class="mota-content">Loại đá phụ: Không gắn đá</div>
+                <div class="mota-content">Phong cách: Fashion</div>
+                <div class="mota-content">Thương hiệu: PNJ</div>
+                <div class="mota-content">Giới tính: Unisex</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.row Product List -->
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <div class="container-fluid">
+    <section id="footer">
+      <div class="footer__top section__font">
+        <div class="container">
+          <hr style="width: 100%; margin-bottom: 50px;">
+          <div class="row">
+            <div class="col-md-4">
+              <table border="1px" style="font-size: 20px; text-align: center; width: 100%;">
+                <h4 style="font-weight: 500; font-size: 20px;">THÔNG TIN NHÓM 2:</h4><br>
+                <tr id="section__pd">
+                  <th class="section__pd">STT</th>
+                  <th class="section__pd">Họ và tên</th>
+                  <th class="section__pd">MASV</th>
+                </tr>
+                <tr>
+                  <td class="section__pd">1</td>
+                  <td class="section__pd">Nguyễn Phúc Hoàng An</td>
+                  <td class="section__pd">21015931</td>
+                </tr>
+                <tr>
+                  <td class="section__pd">2</td>
+                  <td class="section__pd">Nguyễn Thị Minh Anh</td>
+                  <td class="section__pd">21048501</td>
+                </tr>
+                <tr>
+                  <td class="section__pd">3</td>
+                  <td class="section__pd">Trần Thị Bích Phượng</td>
+                  <td class="section__pd">21060651</td>
+                </tr>
+                <tr>
+                  <td class="section__pd">4</td>
+                  <td class="section__pd">Nguyễn Duy Bảo</td>
+                  <td class="section__pd">21044391</td>
+                </tr>
+                <tr>
+                  <td class="section__pd">5</td>
+                  <td class="section__pd">Phan Ngọc Thùy</td>
+                  <td class="section__pd">21061781</td>
+                </tr>
+
+              </table>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-7">
+              <div class="container">
+                <div class="row">
+
+
+                  <div class="col">
+                    <h3 class="Title_footer">VỀ JEWEL SHINE</h3>
+                    <a class="footer_tag" href="home.html">Trang chủ</a> <br>
+                    <a class="footer_tag" href="product1.html">Sản phẩm</a><br>
+                    <a class="footer_tag" href="about.html">Giới thiệu</a><br>
+                    <a class="footer_tag" href="index_blog.html">Blog</a><br>
+                    <a class="footer_tag" href="contact.html">Liên hệ</a><br>
+                  </div>
+                  <div class="col">
+                    <h3 class="Title_footer">THEO DÕI CHÚNG TÔI</h3>
+                    <a class="footer_tag" href="#"><i class="fa-icon fa-brands fa-facebook"></i>Facebook</a> <br>
+                    <a class="footer_tag" href="#"><i class="fa-icon fa-brands fa-instagram"></i>Instagram</a><br>
+                    <a class="footer_tag" href="#"><i class="fa-icon fa-brands fa-tiktok"></i>Tiktok</a><br>
+                  </div>
+                  <div class="col">
+                    <h3 class="Title_footer">ĐĂNG KÝ ĐỂ NHẬN ƯU ĐÃI</h3>
+                    <div class="email-transform">
+                      <input type="email" class="email-transform-item" id="colFormLabel" placeholder="Email">
+                    </div>
+                    <div class="submit_btn">
+                      <button type="submit" class="btn_w btn btn-primary"><span>Submit</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="grid">
+          <p class="footer__text">© 2023 - Bản quyền thuộc nhóm 2 môn HT & CN WEB</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- js file link-->
+  <script src="../js/header.js"></script>
+</body>
+
+</html>
