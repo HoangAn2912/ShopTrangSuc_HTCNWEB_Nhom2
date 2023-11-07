@@ -25,7 +25,7 @@
 
 .header .navbar a:hover{
     color: var(--main);
-    border-bottom: .1rem solid var(--main);
+    
     padding-top: .5rem;
     font-weight: 700;
 }
@@ -236,9 +236,10 @@
     top: 100%; right: -100%;
     height: 170px;
     width: 20rem;
-    padding-left: 15px;
+    padding: 0 5px;
     border: .1rem solid  #ccc;
     background: #fff;
+   
     
 }
 
@@ -247,11 +248,21 @@
 }
 
 .header .user-content .user-item{
-    position: relative;
+    text-align: center;
     margin: 2rem 0;
     display: flex;
-    align-items: center;
     gap: 1.5rem;
+}
+
+.header .user-content .user-item:hover{
+    background-color: #FAF9F9;
+    border-bottom: .1rem solid var(--main);
+    width: 100%;
+    
+    height: auto;
+    font-weight: 500;
+    color: var(--main);
+   
 }
 
 .header .user-content .user-item .user-item-content{
@@ -259,19 +270,21 @@
     text-decoration: none;
     font-size: 2rem;
     color: black;
-    text-align: center;
+    margin: auto;
 }
 
 .header .user-content .user-item .user-item-content:hover{
     color: var(--main);
-    border-bottom: .1rem solid var(--main);
-    margin-left: .2rem;
 }
 
 .navbar-item{
     margin: 0 5px;
-}
 
+}
+.navbar-item:hover{
+    border-bottom: .1rem solid var(--main);
+
+}
 .dropdown-menu > li:hover{
     cursor: pointer;
     background-color: #FAF9F9;
@@ -522,8 +535,24 @@ ul > li {
     border-top: none;
 }
 
-
-
+@media  (max-width: 750px) and (min-width: 450px){
+    .navbar-item{
+        width: 100%;
+        height: 10%;
+        
+    }
+    .navbar-item:hover{
+        width: 100%;
+        background-color: #FAF9F9;
+        height: auto;
+        border-bottom: .1rem solid var(--main);
+        
+        
+    }
+    .navbar-item > a {
+        max-width: 100%;
+    }
+}
 
 
 
