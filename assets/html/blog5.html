@@ -32,15 +32,28 @@
                 <img src="../img/logo.png" alt="Logo Website">
             </a>
             <nav class="navbar">
-                <a href="home.html">Trang chủ</a>
-                <a href="product1.html">Sản phẩm</a>
-                <a href="about.html">Giới thiệu</a>
-                <a href="index_blog.html">Blog</a>
-                <a href="contact.html">Liên hệ</a>
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
             </nav>
-            <div class="icons">
+            <div class="icons" style="display: flex;">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
+                </div>
                 <div class="fas fa-solid fa-user" id="user-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
@@ -51,51 +64,40 @@
             </div>
     
             <div class="cart-items-container">
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
+                </a>
+                <a class="cart-item" href="productdetail3.html">
                     <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                    <img src="../img//nhan3.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item ">
+                </a>
+                <a class="cart-item " href="productdetail4.html">
                     <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                    <img src="../img/nhan4.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
-                    <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
-                    </div>
-                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
+                </a>
                 <a href="cart.html" id="btn">Kiểm tra</a>
             </div>
     
@@ -115,99 +117,83 @@
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #E8BB73; font-weight: bold;">Mẹo chọn trang sức sang trọng</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Mẹo chọn trang sức sang trọng</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                27/12/2023
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog5.jpg" alt="">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb list1">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Trang chủ</a></li>
+                         <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                        <li><a href="index_blog.html">Tin tức</a></li>
+                        <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                        <li>Mẹo chọn trang sức sang trọng</li>
+                    </ul>
+                </div>
+                <section class="content">
+                    
+                        <article>
+                            <div class="article-main">
+                                <p>Mẹo chọn trang sức sang trọng</p>
+                                <div class="post-time">
+                                    " Viết bởi "
+                                    <span style="color: #333;">Admin, </span>
+                                    10/04/2022
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-img">
+                                        <img src="../img/blog5.jpg"  class="img-fluid" alt="" width="100%">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="description" style="text-align: justify;">
-                            <p>Trang sức sang trọng không chỉ là những món đồ trang sức mà còn là một tuyên ngôn về sự lựa chọn tinh tế, phong cách, và đẳng cấp. Việc lựa chọn trang sức sang trọng đòi hỏi một chút kiến thức và cảm nhận về sự tinh xảo, để tạo nên một sự kết hợp hoàn hảo giữa sự quý phái và vẻ đẹp tự nhiên.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Dưới đây là một số mẹo để bạn chọn trang sức sang trọng một cách tối ưu:
-                           </p>
-                           <p>
-                               1. Chất liệu: Chọn trang sức được làm từ các loại kim loại quý như vàng 18K hoặc bạch kim. Chất liệu cao cấp đảm bảo sự bền bỉ và giữ giá trị lâu dài cho trang sức của bạn.
-                           </p>
-                           <p>
-                            2. Màu sắc: Lựa chọn màu sắc trang sức phù hợp với làn da và tông màu của bạn. Màu vàng và kim cương tạo ra sự lấp lánh, trong khi các viên đá quý màu sắc khác có thể tạo điểm nhấn thú vị.
-                           </p>
-                           <p>
-                            3. Thiết kế: Thiết kế của trang sức rất quan trọng. Hãy chọn các thiết kế đơn giản và tinh tế để thể hiện sự sang trọng hoặc các thiết kế phức tạp và hoàn hảo để thể hiện sự tinh xảo.
-                           </p>
-                           <p>
-                            4. Kích thước: Chọn trang sức có kích thước phù hợp với dáng vóc và phong cách của bạn. Đôi khuyên tai lớn hoặc dây chuyền dài có thể tạo điểm nhấn ấn tượng.
-                           </p>
-                           <p>
-                            5. Nguyên liệu: Đá quý là một yếu tố quan trọng trong trang sức sang trọng. Kim cương, ngọc trai, hoặc viên đá quý khác đều tạo ra vẻ đẹp đặc biệt. Chọn những viên đá có độ trong suốt và cắt xẻ hoàn hảo để tạo sự lấp lánh.
-                           </p>
-                           <p>
-                            6. Tương tự nhau: Nếu bạn đang lựa chọn nhiều món trang sức để đeo cùng nhau, hãy đảm bảo chúng phối hợp về màu sắc, chất liệu và thiết kế để tạo nên bộ trang sức sang trọng hoàn hảo.
-                           </p>
-                           <p>
-                            7. Nguồn gốc và thương hiệu: Chọn trang sức từ các thương hiệu uy tín với nguồn gốc rõ ràng để đảm bảo tính chuẩn mực và chất lượng.
-                           </p>
-                           <p>
-                            Mẹo chọn trang sức sang trọng giúp bạn thể hiện phong cách và đẳng cấp của mình một cách tối đa. Hãy luôn đầu tư thời gian và quyết định cân nhắc khi lựa chọn trang sức để tạo nên một biểu tượng thời trang đích thực.
-                           </p>
-
-                        </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem; margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
-                    </div>
-                </section>
-                
-            </section>
-            
-        </div>
-    </main>
+                            <div class="description" style="text-align: justify; font-size: 18px !important;" >
+                                <p>Trang sức sang trọng không chỉ là những món đồ trang sức mà còn là một tuyên ngôn về sự lựa chọn tinh tế, phong cách, và đẳng cấp. Việc lựa chọn trang sức sang trọng đòi hỏi một chút kiến thức và cảm nhận về sự tinh xảo, để tạo nên một sự kết hợp hoàn hảo giữa sự quý phái và vẻ đẹp tự nhiên.</p>
+                               <p style="padding: 20px 0;">
+                                Dưới đây là một số mẹo để bạn chọn trang sức sang trọng một cách tối ưu:                               </p>
+                               <ul>
+                                <li>Chất liệu: Chọn trang sức được làm từ các loại kim loại quý như vàng 18K hoặc bạch kim. Chất liệu cao cấp đảm bảo sự bền bỉ và giữ giá trị lâu dài cho trang sức của bạn.</li>
+                                <li>Màu sắc: Lựa chọn màu sắc trang sức phù hợp với làn da và tông màu của bạn. Màu vàng và kim cương tạo ra sự lấp lánh, trong khi các viên đá quý màu sắc khác có thể tạo điểm nhấn thú vị.</li>
+                                <li>Thiết kế: Thiết kế của trang sức rất quan trọng. Hãy chọn các thiết kế đơn giản và tinh tế để thể hiện sự sang trọng hoặc các thiết kế phức tạp và hoàn hảo để thể hiện sự tinh xảo.</li>
+                                <li>Kích thước: Chọn trang sức có kích thước phù hợp với dáng vóc và phong cách của bạn. Đôi khuyên tai lớn hoặc dây chuyền dài có thể tạo điểm nhấn ấn tượng.</li>
+                                <li>Nguyên liệu: Đá quý là một yếu tố quan trọng trong trang sức sang trọng. Kim cương, ngọc trai, hoặc viên đá quý khác đều tạo ra vẻ đẹp đặc biệt. Chọn những viên đá có độ trong suốt và cắt xẻ hoàn hảo để tạo sự lấp lánh.</li>
+                                <li>Tương tự nhau: Nếu bạn đang lựa chọn nhiều món trang sức để đeo cùng nhau, hãy đảm bảo chúng phối hợp về màu sắc, chất liệu và thiết kế để tạo nên bộ trang sức sang trọng hoàn hảo.</li>
+                                <li>Nguồn gốc và thương hiệu: Chọn trang sức từ các thương hiệu uy tín với nguồn gốc rõ ràng để đảm bảo tính chuẩn mực và chất lượng.</li>
+                               </ul>
+                               <p>
+                                Mẹo chọn trang sức sang trọng giúp bạn thể hiện phong cách và đẳng cấp của mình một cách tối đa. Hãy luôn đầu tư thời gian và quyết định cân nhắc khi lựa chọn trang sức để tạo nên một biểu tượng thời trang đích thực.                               </p>
+                               
     
+                            </div>
+                            <hr style="margin-top: 70px;">
+                            
+                        </article>
+                        <div class="review-form">
+                            <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                    <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="name">Tên*</label> -->
+                                    <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email*</label> -->
+                                    <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 
 

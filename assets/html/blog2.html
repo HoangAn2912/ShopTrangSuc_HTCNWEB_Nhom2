@@ -26,173 +26,166 @@
 </head>
 <body>
     <div class="container">
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="home.html">Trang chủ</a>
-            <a href="product1.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="index_blog.html">Blog</a>
-            <a href="contact.html">Liên hệ</a>
-
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="Logo Website">
+            </a>
+            <nav class="navbar">
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
+            </nav>
+            <div class="icons" style="display: flex;">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                <div class="fas fa-solid fa-user" id="user-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            <div class="cart-items-container">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail3.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img//nhan3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item " href="productdetail4.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img/nhan4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
+            </div>
+    
+            <div class="user-content">
+                <div class="user-item">
+                    <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
-
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login_1.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="home.html">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="index_blog.html">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #7fcbc9; font-weight: bold;">Phong cách phối đồ ấn tượng</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Phong cách phối đồ ấn tượng</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                30/04/2022
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog2.jpg" alt="">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb list1">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Trang chủ</a></li>
+                         <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                        <li><a href="index_blog.html">Tin tức</a></li>
+                        <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                        <li>Phong cách phối đồ ấn tượng</li>
+                    </ul>
+                </div>
+                <section class="content">
+                    
+                        <article>
+                            <div class="article-main">
+                                <p>Phong cách phối đồ ấn tượng</p>
+                                <div class="post-time">
+                                    " Viết bởi "
+                                    <span style="color: #333;">Admin, </span>
+                                    10/04/2022
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-img">
+                                        <img src="../img/blog2.jpg"  class="img-fluid" alt="" width="100%">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="description" style="text-align: justify;">
-                            <p>Phong cách phối đồ ấn tượng là một biểu đạt cá nhân độc đáo, một cách thể hiện bản thân và sự sáng tạo thông qua việc lựa chọn và kết hợp trang phục. Nó không chỉ là cách bạn mặc, mà còn là cách bạn diễn đạt cá tính, thể hiện sự tự tin và gây ấn tượng mạnh mẽ với người khác.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Phối đồ ấn tượng yêu cầu sự kết hợp tinh tế giữa màu sắc, kiểu dáng, và các phụ kiện. Đó là sự nắm bắt xu hướng thời trang và biến chúng thành một phiên bản độc đáo của chính bạn. Đôi khi, phong cách ấn tượng không nằm trong việc mặc đồ đắt tiền, mà là khả năng biến những món đồ thông thường thành trang phục nổi bật.
-                           </p>
-                           <p>
-                            Một trong những yếu tố quan trọng của phong cách phối đồ ấn tượng là khả năng thể hiện tâm hồn và cảm xúc. Đó có thể là màu sắc sáng tạo, hoặc sự kết hợp của các loại vải và phụ kiện để tạo ra một bức tranh thời trang hoàn hảo. Phối đồ ấn tượng không bao giờ bị giới hạn bởi quy tắc, nó là nghệ thuật tự do và sự tự do của phong cách.
-                           </p>
-                           <p>
-                            Ngoài ra, phong cách phối đồ ấn tượng cũng thể hiện sự tự tin và sáng tạo. Nó thúc đẩy bạn tự tin khi tự do biến hóa và khám phá, và tạo nên một dấu ấn riêng biệt trong mỗi bộ trang phục. Sự tự tin và ấn tượng về phong cách thường lưu lại trong tâm trí người khác và thể hiện một phần quan trọng của bản thân bạn.
-                           </p>
-                           <p>
-                            Phong cách phối đồ ấn tượng là một nghệ thuật, một cách để bạn tự do thể hiện bản thân và để thế giới biết về ai bạn là. Hãy khám phá và thể hiện sự sáng tạo của bạn thông qua việc phối đồ và tạo nên phong cách thời trang ấn tượng riêng mình.
-                           </p>
-
-                        </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
-                    </div>
-                </section>
-                
-            </section>
-          
-        </div>
-    </main>
+                            <div class="description" style="text-align: justify; " >
+                                <p>Phong cách phối đồ ấn tượng là một biểu đạt cá nhân độc đáo, một cách thể hiện bản thân và sự sáng tạo thông qua việc lựa chọn và kết hợp trang phục. Nó không chỉ là cách bạn mặc, mà còn là cách bạn diễn đạt cá tính, thể hiện sự tự tin và gây ấn tượng mạnh mẽ với người khác.</p>
+                               <p style="padding: 20px 0;">
+                                Phối đồ ấn tượng yêu cầu sự kết hợp tinh tế giữa màu sắc, kiểu dáng, và các phụ kiện. Đó là sự nắm bắt xu hướng thời trang và biến chúng thành một phiên bản độc đáo của chính bạn. Đôi khi, phong cách ấn tượng không nằm trong việc mặc đồ đắt tiền, mà là khả năng biến những món đồ thông thường thành trang phục nổi bật.                               </p>
+                               <p>
+                                Một trong những yếu tố quan trọng của phong cách phối đồ ấn tượng là khả năng thể hiện tâm hồn và cảm xúc. Đó có thể là màu sắc sáng tạo, hoặc sự kết hợp của các loại vải và phụ kiện để tạo ra một bức tranh thời trang hoàn hảo. Phối đồ ấn tượng không bao giờ bị giới hạn bởi quy tắc, nó là nghệ thuật tự do và sự tự do của phong cách.                               </p>
+                               <p>
+                                Ngoài ra, phong cách phối đồ ấn tượng cũng thể hiện sự tự tin và sáng tạo. Nó thúc đẩy bạn tự tin khi tự do biến hóa và khám phá, và tạo nên một dấu ấn riêng biệt trong mỗi bộ trang phục. Sự tự tin và ấn tượng về phong cách thường lưu lại trong tâm trí người khác và thể hiện một phần quan trọng của bản thân bạn.                               </p>
+                               <p>
+                                Phong cách phối đồ ấn tượng là một nghệ thuật, một cách để bạn tự do thể hiện bản thân và để thế giới biết về ai bạn là. Hãy khám phá và thể hiện sự sáng tạo của bạn thông qua việc phối đồ và tạo nên phong cách thời trang ấn tượng riêng mình.                               </p>
     
+                            </div>
+                            <hr style="margin-top: 70px;">
+                            
+                        </article>
+                        <div class="review-form">
+                            <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                    <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="name">Tên*</label> -->
+                                    <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email*</label> -->
+                                    <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
