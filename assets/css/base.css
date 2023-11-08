@@ -208,6 +208,12 @@ body{
 .text_item-top{
     font-size: 1.6rem;
 }
-.submit-button{
+.submit-submit{
     color:white;
+    background-color: #E8BB73;
+    width: 120px;
+    height: 30px;
+    font-size: 1.6rem;
+    border-radius: 10px;;
 }
+
