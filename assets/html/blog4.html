@@ -26,179 +26,170 @@
 </head>
 <body>
     <div class="container">
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="home.html">Trang chủ</a>
-            <a href="product1.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="index_blog.html">Blog</a>
-            <a href="contact.html">Liên hệ</a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="Logo Website">
+            </a>
+            <nav class="navbar">
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
+            </nav>
+            <div class="icons" style="display: flex;">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                <div class="fas fa-solid fa-user" id="user-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            <div class="cart-items-container">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail3.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img//nhan3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item " href="productdetail4.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img/nhan4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
+            </div>
+    
+            <div class="user-content">
+                <div class="user-item">
+                    <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
-
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #7fcbc9; font-weight: bold;">Dùng trang sức nào phù hợp với mình</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Dùng trang sức nào phù hợp với mình</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                10/12/2023
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog4.jpg" alt="">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb list1">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Trang chủ</a></li>
+                         <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                        <li><a href="index_blog.html">Tin tức</a></li>
+                        <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                        <li>Dùng trang sức nào phù hợp với mình</li>
+                    </ul>
+                </div>
+                <section class="content">
+                    
+                        <article>
+                            <div class="article-main">
+                                <p>Dùng trang sức nào phù hợp với mình</p>
+                                <div class="post-time">
+                                    " Viết bởi "
+                                    <span style="color: #333;">Admin, </span>
+                                    10/04/2022
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-img">
+                                        <img src="../img/blog4.jpg"  class="img-fluid" alt="" width="100%">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="description" style="text-align: justify;">
-                            <p>Trang sức không chỉ là một phụ kiện đơn thuần, mà còn là một cách thể hiện phong cách và cá tính cá nhân. Khi bạn chọn dùng trang sức phù hợp với mình, bạn không chỉ làm tôn lên vẻ đẹp tự nhiên mà còn thể hiện sự sáng tạo và cá tính riêng.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Một bộ trang sức phù hợp với bạn có thể là một tuyên ngôn về sự tự tin, đẳng cấp và quyền uy. Điều quan trọng là biết chọn lựa trang sức sao cho nó phản ánh phong cách cá nhân của bạn.
-                           </p>
-                           <p>
-                            1. Vòng cổ và dây chuyền: Nếu bạn thích sự tinh tế và đơn giản, một dây chuyền mỏng với một viên ngọc trai hoặc một chiếc vòng cổ tinh xảo có thể phù hợp. Nếu bạn muốn thể hiện sự mạnh mẽ và bản lĩnh, một dây chuyền bản to với một viên đá quý lấp lánh có thể là lựa chọn tốt.
-                           </p>
-                           <p>
-                            2.  Bông tai: Bông tai có thể thay đổi diện mạo của bạn một cách nhanh chóng. Bông tai ngắn, nhỏ gọn phù hợp với phong cách tỉ mỉ, trong khi bông tai dài và rườm rà có thể thể hiện phong cách quyến rũ và sang trọng.
-                           </p>
-                           <p>
-                            3.  Nhẫn: Nhẫn có thể là biểu tượng của tình yêu, tôn thờ, hoặc thậm chí là một tác phẩm nghệ thuật. Chọn một chiếc nhẫn phù hợp với cơ cấu và kích thước ngón tay của bạn để nó có thể thể hiện phong cách cá nhân.
-                           </p>
-                           <p>
-                            4. Vòng tay: Vòng cổ vàng với các hạt đá quý, vòng tay sáng màu với thiết kế độc đáo, hay vòng tay dây đan thủ công có thể là lựa chọn tuyệt vời. Chúng có thể thể hiện sự ưa thích về màu sắc và sáng tạo của bạn.
-                           </p>
-                           <p>
-                            Dùng trang sức phù hợp với mình không chỉ tạo điểm nhấn cho phong cách, mà còn giúp bạn thể hiện vẻ đẹp và tâm hồn cá nhân. Hãy thử nghiệm và khám phá, và hãy luôn luôn là chính mình khi lựa chọn trang sức.
-                           </p>
+                            <div class="description" style="text-align: justify; font-size: 18px !important;" >
+                                <p>Trang sức không chỉ là một phụ kiện đơn thuần, mà còn là một cách thể hiện phong cách và cá tính cá nhân. Khi bạn chọn dùng trang sức phù hợp với mình, bạn không chỉ làm tôn lên vẻ đẹp tự nhiên mà còn thể hiện sự sáng tạo và cá tính riêng.</p>
+                               <p style="padding: 20px 0;">
+                                Một bộ trang sức phù hợp với bạn có thể là một tuyên ngôn về sự tự tin, đẳng cấp và quyền uy. Điều quan trọng là biết chọn lựa trang sức sao cho nó phản ánh phong cách cá nhân của bạn.                               </p>
+                               <ul >
+                                <li> <p>Vòng cổ và dây chuyền: Nếu bạn thích sự tinh tế và đơn giản, một dây chuyền mỏng với một viên ngọc trai hoặc một chiếc vòng cổ tinh xảo có thể phù hợp. Nếu bạn muốn thể hiện sự mạnh mẽ và bản lĩnh, một dây chuyền bản to với một viên đá quý lấp lánh có thể là lựa chọn tốt.</p></li>
+                                <li><p> Bông tai: Bông tai có thể thay đổi diện mạo của bạn một cách nhanh chóng. Bông tai ngắn, nhỏ gọn phù hợp với phong cách tỉ mỉ, trong khi bông tai dài và rườm rà có thể thể hiện phong cách quyến rũ và sang trọng.</p></li>
+                                <li><p>Nhẫn: Nhẫn có thể là biểu tượng của tình yêu, tôn thờ, hoặc thậm chí là một tác phẩm nghệ thuật. Chọn một chiếc nhẫn phù hợp với cơ cấu và kích thước ngón tay của bạn để nó có thể thể hiện phong cách cá nhân.    </p></li>
+                                <li><p>Vòng tay: Vòng cổ vàng với các hạt đá quý, vòng tay sáng màu với thiết kế độc đáo, hay vòng tay dây đan thủ công có thể là lựa chọn tuyệt vời. Chúng có thể thể hiện sự ưa thích về màu sắc và sáng tạo của bạn.</p></li>
+                               </ul>
+                               <p>Dùng trang sức phù hợp với mình không chỉ tạo điểm nhấn cho phong cách, mà còn giúp bạn thể hiện vẻ đẹp và tâm hồn cá nhân. Hãy thử nghiệm và khám phá, và hãy luôn luôn là chính mình khi lựa chọn trang sức.
 
+                               </p>
+                            </div>
+                            <hr style="margin-top: 70px;">
+                            
+                        </article>
+                        <div class="review-form">
+                            <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                    <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="name">Tên*</label> -->
+                                    <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email*</label> -->
+                                    <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                            </form>
                         </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem; margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
-                    </div>
+                    
+                    
                 </section>
-               
-            </section>
-            
+            </div>
         </div>
-    </main>
-    
+    </div>
+
 </div>
+
 
 
 
@@ -240,7 +231,7 @@
               <tr>
                 <td class="section__pd">5</td>
                 <td class="section__pd">Phan Ngọc Thùy</td>
-                <td class="section__pd">21060781</td>
+                <td class="section__pd">21061781</td>
               </tr>
               
             </table>

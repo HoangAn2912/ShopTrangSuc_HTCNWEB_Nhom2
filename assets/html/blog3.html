@@ -26,171 +26,167 @@
 </head>
 <body>
     <div class="container">
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="home.html">Trang chủ</a>
-            <a href="product1.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="index_blog.html">Blog</a>
-            <a href="contact.html">Liên hệ</a>
-
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="Logo Website">
+            </a>
+            <nav class="navbar">
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
+            </nav>
+            <div class="icons" style="display: flex;">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                <div class="fas fa-solid fa-user" id="user-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            <div class="cart-items-container">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail3.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img//nhan3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item " href="productdetail4.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img/nhan4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
+            </div>
+    
+            <div class="user-content">
+                <div class="user-item">
+                    <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
-
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #7fcbc9; font-weight: bold;">Bộ sưu tập trang sức vàng</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Bộ sưu tập trang sức vàng</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                04/09/2023
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog3.jpg" alt="">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb list1">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Trang chủ</a></li>
+                         <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                        <li><a href="index_blog.html">Tin tức</a></li>
+                        <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                        <li>Bộ sưu tập trang sức vàng</li>
+                    </ul>
+                </div>
+                <section class="content">
+                    
+                        <article>
+                            <div class="article-main">
+                                <p>Bộ sưu tập trang sức vàng</p>
+                                <div class="post-time">
+                                    " Viết bởi "
+                                    <span style="color: #333;">Admin, </span>
+                                    10/04/2022
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-img">
+                                        <img src="../img/blog3.jpg"  class="img-fluid" alt="" width="100%">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="description" style="text-align: justify;">
-                            <p>Trang sức vàng luôn là biểu tượng của vẻ đẹp và quý phái không bao giờ lỗi mốt. Bất kỳ ai yêu thích thế giới thời trang và trang sức đều hiểu giá trị tinh túy của vàng. Bộ sưu tập trang sức vàng đang chào đón bạn vào một thế giới lấp lánh, độc đáo và đẳng cấp.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Vàng, với vẻ đẹp tự nhiên và bóng lấp lánh, biểu trưng cho sự giàu có và quyền uy. Bộ sưu tập trang sức vàng đưa ra một loạt các thiết kế đa dạng từ vòng cổ, nhẫn, bông tai, đến vòng tay vàng, để phù hợp với mọi dịp và phong cách. Mỗi món trang sức trong bộ sưu tập này được chế tác bằng vàng 18K, đảm bảo chất lượng và giá trị thực sự.
-                           </p>
-                           <p>
-                            Ngoài việc thể hiện sự quý phái và thăng hoa, bộ sưu tập trang sức vàng còn thể hiện sự tôn vinh vẻ đẹp của bạn. Kim loại vàng tạo nên sự rạng ngời, nổi bật, và lấp lánh, giúp bạn tỏa sáng trong mọi bữa tiệc và sự kiện. Không chỉ vậy, trang sức vàng cũng có khả năng tôn lên làn da, làm nổi bật vẻ đẹp tự nhiên của bạn.
-                           </p>
-                           <p>
-                            Bộ sưu tập trang sức vàng không chỉ là một lựa chọn thời trang, mà còn là một biểu tượng của sự sang trọng và thành công. Nó thể hiện đẳng cấp và độc đáo trong phong cách cá nhân của bạn. Nếu bạn đang tìm kiếm món trang sức độc đáo và đẳng cấp để tôn vinh bản thân hoặc tặng cho người yêu thương, thì bộ sưu tập trang sức vàng là lựa chọn hoàn hảo.
-                           </p>
-
-                        </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem; margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
-                    </div>
-                </section>
-              
-            </section>
-           
-        </div>
-    </main>
+                            <div class="description" style="text-align: justify; font-size: 18px !important;" >
+                                <p>Trang sức vàng luôn là biểu tượng của vẻ đẹp và quý phái không bao giờ lỗi mốt. Bất kỳ ai yêu thích thế giới thời trang và trang sức đều hiểu giá trị tinh túy của vàng. Bộ sưu tập trang sức vàng đang chào đón bạn vào một thế giới lấp lánh, độc đáo và đẳng cấp.</p>
+                               <p style="padding: 20px 0;">
+                                Vàng, với vẻ đẹp tự nhiên và bóng lấp lánh, biểu trưng cho sự giàu có và quyền uy. Bộ sưu tập trang sức vàng đưa ra một loạt các thiết kế đa dạng từ vòng cổ, nhẫn, bông tai, đến vòng tay vàng, để phù hợp với mọi dịp và phong cách. Mỗi món trang sức trong bộ sưu tập này được chế tác bằng vàng 18K, đảm bảo chất lượng và giá trị thực sự.                               </p>
+                               <p>
+                                Ngoài việc thể hiện sự quý phái và thăng hoa, bộ sưu tập trang sức vàng còn thể hiện sự tôn vinh vẻ đẹp của bạn. Kim loại vàng tạo nên sự rạng ngời, nổi bật, và lấp lánh, giúp bạn tỏa sáng trong mọi bữa tiệc và sự kiện. Không chỉ vậy, trang sức vàng cũng có khả năng tôn lên làn da, làm nổi bật vẻ đẹp tự nhiên của bạn.                               </p>
+                               <p>
+                                Bộ sưu tập trang sức vàng không chỉ là một lựa chọn thời trang, mà còn là một biểu tượng của sự sang trọng và thành công. Nó thể hiện đẳng cấp và độc đáo trong phong cách cá nhân của bạn. Nếu bạn đang tìm kiếm món trang sức độc đáo và đẳng cấp để tôn vinh bản thân hoặc tặng cho người yêu thương, thì bộ sưu tập trang sức vàng là lựa chọn hoàn hảo.                               </p>
+                             
     
+                            </div>
+                            <hr style="margin-top: 70px;">
+                            
+                        </article>
+                        <div class="review-form">
+                            <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                    <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="name">Tên*</label> -->
+                                    <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email*</label> -->
+                                    <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 
 
@@ -232,7 +228,7 @@
               <tr>
                 <td class="section__pd">5</td>
                 <td class="section__pd">Phan Ngọc Thùy</td>
-                <td class="section__pd">21060781</td>
+                <td class="section__pd">21061781</td>
               </tr>
               
             </table>

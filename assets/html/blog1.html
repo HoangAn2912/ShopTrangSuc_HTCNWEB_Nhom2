@@ -26,171 +26,167 @@
 </head>
 <body>
     <div class="container">
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="home.html">Trang chủ</a>
-            <a href="product1.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="index_blog.html">Blog</a>
-            <a href="contact.html">Liên hệ</a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="Logo Website">
+            </a>
+            <nav class="navbar">
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
+            </nav>
+            <div class="icons" style="display: flex;">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                <div class="fas fa-solid fa-user" id="user-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            <div class="cart-items-container">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail3.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img//nhan3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item " href="productdetail4.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img/nhan4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
+            </div>
+    
+            <div class="user-content">
+                <div class="user-item">
+                    <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
-
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #7fcbc9; font-weight: bold;">Lựa dây chuyền hợp màu da</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Lựa dây chuyền hợp màu da</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                12/04/2022
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog1.jpg" alt="">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb list1">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Trang chủ</a></li>
+                         <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                        <li><a href="index_blog.html">Tin tức</a></li>
+                        <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                        <li>Lựa dây chuyền hợp màu da</li>
+                    </ul>
+                </div>
+                <section class="content">
+                    
+                        <article>
+                            <div class="article-main">
+                                <p>Lựa dây chuyền hợp màu da   </p>
+                                <div class="post-time">
+                                    " Viết bởi "
+                                    <span style="color: #333;">Admin, </span>
+                                    10/04/2022
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-img">
+                                        <img src="../img/blog1.jpg"  class="img-fluid" alt="" width="100%">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="description" style="text-align: justify;">
-                            <p s>Dây chuyền hợp màu da là một phần không thể thiếu của trang sức, mang trong mình sự thanh lịch và cá tính độc đáo. Được thiết kế để hoàn hảo kết hợp với màu da tự nhiên của bạn, dây chuyền này không chỉ là một món trang sức, mà còn là một tuyên ngôn về phong cách và sự tự tin.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Lựa dây chuyền hợp màu da có sức hút đặc biệt khi nói đến khả năng tôn vinh vẻ đẹp tự nhiên. Thiết kế tinh tế và sự lựa chọn tôn sáng màu da giúp bạn tỏa sáng, tạo điểm nhấn cho vẻ đẹp riêng biệt của bạn. Được làm từ các vật liệu chất lượng cao, dây chuyền này có thể điều chỉnh độ dài để phù hợp với mọi phong cách và trang phục.
-                           </p>
-                           <p>
-                            Dây chuyền hợp màu da không chỉ là một món trang sức mà còn là một phần của bạn, nó biểu thị cá tính và phong cách riêng. Được lựa chọn một cách cẩn thận, nó có khả năng tạo nên một lựa chọn thời trang thông minh và tôn vinh sự riêng biệt của bạn.
-                           </p>
-                           <p>
-                            Với sự đa dạng về thiết kế và chất liệu, dây chuyền hợp màu da có thể phù hợp với nhiều dịp khác nhau, từ công việc đến tiệc tùng hoặc những buổi hẹn hò quan trọng. Đừng ngần ngại thể hiện phong cách của bạn và thêm một chút thanh lịch cho bộ trang phục của bạn với dây chuyền hợp màu da - biểu tượng của sự tự tin và vẻ đẹp tự nhiên.
-                           </p>
-
-                        </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.5rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem; margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
-                    </div>
-                </section>
-               
-            </section>
-           
-        </div>
-    </main>
+                            <div class="description" style="text-align: justify; font-size: 18px !important;" >
+                                <p>Dây chuyền hợp màu da là một phần không thể thiếu của trang sức, mang trong mình sự thanh lịch và cá tính độc đáo. Được thiết kế để hoàn hảo kết hợp với màu da tự nhiên của bạn, dây chuyền này không chỉ là một món trang sức, mà còn là một tuyên ngôn về phong cách và sự tự tin.</p>
+                               <p style="padding: 20px 0;">
+                                Lựa dây chuyền hợp màu da có sức hút đặc biệt khi nói đến khả năng tôn vinh vẻ đẹp tự nhiên. Thiết kế tinh tế và sự lựa chọn tôn sáng màu da giúp bạn tỏa sáng, tạo điểm nhấn cho vẻ đẹp riêng biệt của bạn. Được làm từ các vật liệu chất lượng cao, dây chuyền này có thể điều chỉnh độ dài để phù hợp với mọi phong cách và trang phục                               </p>
+                               <p>
+                                Dây chuyền hợp màu da không chỉ là một món trang sức mà còn là một phần của bạn, nó biểu thị cá tính và phong cách riêng. Được lựa chọn một cách cẩn thận, nó có khả năng tạo nên một lựa chọn thời trang thông minh và tôn vinh sự riêng biệt của bạn.                               </p>
+                               <p>
+                                Với sự đa dạng về thiết kế và chất liệu, dây chuyền hợp màu da có thể phù hợp với nhiều dịp khác nhau, từ công việc đến tiệc tùng hoặc những buổi hẹn hò quan trọng. Đừng ngần ngại thể hiện phong cách của bạn và thêm một chút thanh lịch cho bộ trang phục của bạn với dây chuyền hợp màu da - biểu tượng của sự tự tin và vẻ đẹp tự nhiên.                               </p>
+                               
     
+                            </div>
+                            <hr style="margin-top: 70px;">
+                            
+                        </article>
+                        <div class="review-form">
+                            <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                    <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="name">Tên*</label> -->
+                                    <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email*</label> -->
+                                    <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                </div>
+                                <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 
 
@@ -232,7 +228,7 @@
               <tr>
                 <td class="section__pd">5</td>
                 <td class="section__pd">Phan Ngọc Thùy</td>
-                <td class="section__pd">21060781</td>
+                <td class="section__pd">21061781</td>
               </tr>
               
             </table>

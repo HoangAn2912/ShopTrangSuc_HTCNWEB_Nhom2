@@ -66,85 +66,84 @@ font-size: 2.2rem;
                 <img src="../img/logo.png" alt="Logo Website">
             </a>
             <nav class="navbar">
-                <a href="home.html">Trang chủ</a>
-                <a href="product1.html">Sản phẩm</a>
-                <a href="about.html">Giới thiệu</a>
-                <a href="index_blog.html">Blog</a>
-                <a href="contact.html">Liên hệ</a>
-
-
-
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
             </nav>
-            <div class="icons">
+            <div class="icons" style="display: flex;">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
+                </div>
                 <div class="fas fa-solid fa-user" id="user-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-
+    
             <div class="search-form">
                 <input type="search" id="search-box" placeholder="Tìm kiếm...">
                 <label for="search-box" class="fas fa-search"></label>
             </div>
-
+    
             <div class="cart-items-container">
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
+                </a>
+                <a class="cart-item" href="productdetail3.html">
                     <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                    <img src="../img//nhan3.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item ">
+                </a>
+                <a class="cart-item " href="productdetail4.html">
                     <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
+                    <img src="../img/nhan4.png" alt="">
                     <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
                     </div>
                     <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <div class="cart-item">
-                    <span class="fas fa-items"></span>
-                    <img src="../img/logo-web.png" alt="">
-                    <div class="content">
-                        <h3>cart item 01</h3>
-                        <div class="price">1.000.000VND</div>
-                    </div>
-                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-                </div>
-                <a href="#" id="btn">Kiểm tra</a>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
             </div>
-
+    
             <div class="user-content">
                 <div class="user-item">
                     <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
                 <div class="user-item">
-                    <a href="register.html" class="user-item-content">Đăng ký</a>
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
                 <div class="user-item">
-                    <a href="login.html" class="user-item-content">Đăng nhập</a>
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
             </div>
         </header>
@@ -184,19 +183,19 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail2.html"><img class="card-img-top" src="../img/nhan1.png"
+                                <a href="vong1.html"><img class="card-img-top" src="../img/vong1_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail2.html" class="card-title-name">Nhẫn Vàng trắng 10K đính đá ECZ PNJ XMXMW060984</a>
+                                        <a href="vong1.html" class="card-title-name">Vòng tay Vàng 10K đính đá ECZ PNJ Audax Rosa XMXMC000285</a>
                                     </h4>
-                                    <h5 class="card-title-price">4.190.000đ
+                                    <h5 class="card-title-price">22.900.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn rất đẹp</p>
+                                    <p class="card-text">Vòng làm từ Vàng 10K</p>
 
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail2.html"
+                                    <button class="card-btn"><a href="vong1.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -209,19 +208,19 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail1.html"><img class="card-img-top" src="../img/nhan2.png"
+                                <a href="vong2.html"><img class="card-img-top" src="../img/vong2_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail1.html" class="card-title-name">Nhẫn Kim cương Vàng 14K PNJ DDDDH060002
+                                        <a href="vong2.html" class="card-title-name">Vòng tay Vàng 10K đính đá Synthetic PNJ Sunnyva ZTXMY000620
                                         </a>
                                     </h4>
-                                    <h5 class="card-title-price">22.900.000đ</h5>
-                                    <p class="card-text">Nhẫn rất xinh</p>
+                                    <h5 class="card-title-price">14.190.000đ</h5>
+                                    <p class="card-text">Vòng tay hợp cho phái nữ</p>
 
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail1.html"
+                                    <button class="card-btn"><a href="vong2.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -234,18 +233,18 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail3.html"><img class="card-img-top" src="../img/nhan3.png"
+                                <a href="vong3.html"><img class="card-img-top" src="../img/vong3_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail3.html" class="card-title-name">Nhẫn Vàng 18K đính đá CZ PNJ XMXMY006500
+                                        <a href="vong3.html" class="card-title-name">Vòng tay Vàng 14K đính Ngọc trai Freshwater PNJ Niềm tin PFXMC000009
                                         </a>
                                     </h4>
-                                    <h5 class="card-title-price">11.872.000đ</h5>
-                                    <p class="card-text">Nhẫn cho người giàu!</p>
+                                    <h5 class="card-title-price">21.872.000đ</h5>
+                                    <p class="card-text">Vòng ngọc trai rất hiếm.</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail3.html"
+                                    <button class="card-btn"><a href="vong3.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -259,18 +258,18 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail4.html"><img class="card-img-top" src="../img/nhan4.png"
+                                <a href="vong4.html"><img class="card-img-top" src="../img/vong4_1.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail4.html" class="card-title-name">Nhẫn Kim cương Vàng trắng 14K PNJ DDDDW007940
+                                        <a href="vong4.html" class="card-title-name">Vòng tay Vàng 10K đính đá ECZ PNJ Sunnyva XM00C000107
                                         </a>
                                     </h4>
-                                    <h5 class="card-title-price">34.163.100đ</h5>
-                                    <p class="card-text">Nhẫn đẹp á!</p>
+                                    <h5 class="card-title-price">30.163.100đ</h5>
+                                    <p class="card-text">Vòng tay rất được ưa chuộng!</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail4.html"
+                                    <button class="card-btn"><a href="vong4.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -283,18 +282,18 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail5.html"><img class="card-img-top" src="../img/nhan5.png"
+                                <a href="vong5.html"><img class="card-img-top" src="../img/vong51.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail5.html" class="card-title-name">Nhẫn Vàng 18K đính đá Ruby PNJ RBXMX000012</a>
+                                        <a href="vong5.html" class="card-title-name">Vòng tay trẻ em Vàng 10K PNJ 0000Y001293</a>
                                     </h4>
                                     <h5 class="card-title-price">16.538.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn đẹp</p>
+                                    <p class="card-text">Vòng tay phù hợp với trẻ em nữ!</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail5.html"
+                                    <button class="card-btn"><a href="vong5.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">
@@ -307,18 +306,18 @@ font-size: 2.2rem;
 
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card h-100">
-                                <a href="../html/productdetail6.html"><img class="card-img-top" src="../img/nhan6.png"
+                                <a href="vong6.html"><img class="card-img-top" src="../img/nhan6.png"
                                         alt=""></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="../html/productdetail6.html" class="card-title-name">Nhẫn nam Vàng trắng 10K đính đá ECZ PNJ XMXMW002620</a>
+                                        <a href="vong6.html" class="card-title-name">Vòng tay Vàng trắng Ý 18K PNJ 0000W060428</a>
                                     </h4>
-                                    <h5 class="card-title-price">11.370.000đ
+                                    <h5 class="card-title-price">21.730.000đ
                                     </h5>
-                                    <p class="card-text">Nhẫn Nam Kim cương Vàng trắng 14K</p>
+                                    <p class="card-text">Vòng tay Vàng trắng Ý 18K PNJ 0000W060428</p>
                                 </div>
                                 <div class="card h-100">
-                                    <button class="card-btn"><a href="../html/productdetail6.html"
+                                    <button class="card-btn"><a href="vong6.html"
                                             style="text-decoration: none; color: saddlebrown;">Mua ngay</a></button>
                                 </div>
                                 <div class="card-footer">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="../css/blog.css">
+      <link rel="stylesheet" href="../css/blog.css"> 
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="icon" href="../img/logo_tab.png" type="image/x-icon">
@@ -26,172 +26,170 @@
 </head>
 <body>
     <div class="container">
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="home.html">Trang chủ</a>
-            <a href="product1.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="index_blog.html">Blog</a>
-            <a href="contact.html">Liên hệ</a>
-
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="Logo Website">
+            </a>
+            <nav class="navbar">
+               <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+                <div class="dropdown navbar-item">
+                    <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                  
+                    <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                      <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                      <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+                    </ul>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+                <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+                <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
+    
+            </nav>
+            <div class="icons" style="display: flex;">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <a href="" class="header__cart-note">4</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                <div class="fas fa-solid fa-user" id="user-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            <div class="cart-items-container">
+                <a class="cart-item" href="productdetail2.html">
+                    <img src="../img/nhan1.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                        <div class="price">4.190.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail1.html">
+                    <img src="../img/nhan2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                        <div class="price">22.900.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item" href="productdetail3.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img//nhan3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                        <div class="price">11.872.000đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a class="cart-item " href="productdetail4.html">
+                    <span class="fas fa-items"></span>
+                    <img src="../img/nhan4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Kim Cương Vàng... </h3>
+                        <div class="price">34.163.100đ</div>
+                    </div>
+                    <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+                </a>
+                <a href="cart.html" id="btn">Kiểm tra</a>
+            </div>
+    
+            <div class="user-content">
+                <div class="user-item">
+                    <a href="account.html" class="user-item-content">Trang cá nhân</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
+                <div class="user-item">
+                    <a href="login_1.html" class="user-item-content">Đăng nhập</a>
                 </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
             </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
-
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 <!-- Main -->
 
 
-<div class="container">
-        
-
-       
-        
-    <main class="main">
-        <div class="wrapper">
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                     <li style="padding: 0;"> <span style="padding: 0;">></span></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
-                    <li><a href="#" style="color: #7fcbc9; font-weight: bold;">Dây chuyền kim cương quý nhất</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <section class="left-content">
-                    <article>
-                        <div class="article-main">
-                            <p>Dây chuyền kim cương quý nhất</p>
-                            <div class="post-time">
-                                " Viết bởi "
-                                <span style="color: #333;">Admin, </span>
-                                10/04/2022
-                            </div>
-                            <div class="article-details">
-                                <div class="article-img">
-                                    <img src="../img/blog.png"  class="img-fluid" alt="" width="400px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description" style="text-align: justify; font-size: 18px !important;" >
-                            <p>Dây chuyền kim cương quý nhất không chỉ đơn thuần là một món trang sức, mà nó là biểu tượng của sự sang trọng, đẳng cấp và vẻ đẹp hoàn hảo. Với sự kết hợp tinh tế giữa kim cương tinh khiết và thiết kế đỉnh cao, dây chuyền này đã tạo nên một tác phẩm nghệ thuật vượt xa khỏi bất kỳ sự mong đợi nào.
-                           </p>
-                           <p style="padding: 20px 0;">
-                            Kim cương là một loại đá quý vô cùng hiếm hoi và quý báu, nó tượng trưng cho sự không tận, vĩnh cửu và sự hoàn hảo. Dây chuyền kim cương quý nhất được tạo ra bằng cách chọn lọc những viên kim cương có độ trong suốt và lấp lánh vượt trội, từng viên đều là một tuyệt tác tự nhiên.
-                           </p>
-                           <p>
-                            Những nghệ nhân tài hoa đã đặt công sức và tâm huyết trong việc tạo ra từng chi tiết của dây chuyền này. Thiết kế tỉ mỉ, sáng tạo và độc đáo của dây chuyền là một biểu hiện tối ưu của nghệ thuật trang sức. Được chế tác bằng các tay nghề tinh xảo, mỗi dây chuyền kim cương quý nhất là một bản hòa nhạc tuyệt vời giữa ánh sáng và bóng tối.
-                           </p>
-                           <p>
-                            Sự thanh lịch và độc đáo của dây chuyền kim cương quý nhất biểu hiện sự quý phái và đẳng cấp của người sở hữu. Đây không chỉ là một món trang sức mà còn là một tác phẩm nghệ thuật thể hiện sự đầu tư vào vẻ đẹp và giá trị thực sự của cuộc sống.
-                           </p>
-                           <p>
-                            Dây chuyền kim cương quý nhất là sự kết hợp hoàn hảo giữa sự quý phái của kim cương và sự tinh tế của nghệ thuật trang sức. Nó không chỉ tôn vinh vẻ đẹp mà còn là một biểu tượng của thành công và phong cách cuộc sống.
-                           </p>
-
-                        </div>
-                        <hr style="margin-top: 70px;">
-                        
-                    </article>
-                    <div class="review-form">
-                        <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
-                                <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="name">Tên*</label> -->
-                                <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="email">Email*</label> -->
-                                <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
-                            </div>
-                            <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px;">Gửi bình luận</button>
-                        </form>
+<div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb list1">
+                        <ul class="breadcrumb">
+                            <li><a href="home.html">Trang chủ</a></li>
+                             <li style="padding: 0;"> <span style="padding: 0;">></span></li>
+                            <li><a href="index_blog.html">Tin tức</a></li>
+                            <li style="padding: 0;"> <span style="padding: 0 0px;">></span></li>
+                            <li>Dây chuyền kim cương quý nhất</li>
+                        </ul>
                     </div>
-                </section>
-                
-            </section>
-            
+                    <section class="content">
+                        
+                            <article>
+                                <div class="article-main">
+                                    <p>Dây chuyền kim cương quý nhất</p>
+                                    <div class="post-time">
+                                        " Viết bởi "
+                                        <span style="color: #333;">Admin, </span>
+                                        10/04/2022
+                                    </div>
+                                    <div class="article-details">
+                                        <div class="article-img">
+                                            <img src="../img/blog.png"  class="img-fluid" alt="" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description" style="text-align: justify; font-size: 18px !important;" >
+                                    <p>Dây chuyền kim cương quý nhất không chỉ đơn thuần là một món trang sức, mà nó là biểu tượng của sự sang trọng, đẳng cấp và vẻ đẹp hoàn hảo. Với sự kết hợp tinh tế giữa kim cương tinh khiết và thiết kế đỉnh cao, dây chuyền này đã tạo nên một tác phẩm nghệ thuật vượt xa khỏi bất kỳ sự mong đợi nào.
+                                   </p>
+                                   <p style="padding: 20px 0;">
+                                    Kim cương là một loại đá quý vô cùng hiếm hoi và quý báu, nó tượng trưng cho sự không tận, vĩnh cửu và sự hoàn hảo. Dây chuyền kim cương quý nhất được tạo ra bằng cách chọn lọc những viên kim cương có độ trong suốt và lấp lánh vượt trội, từng viên đều là một tuyệt tác tự nhiên.
+                                   </p>
+                                   <p>
+                                    Những nghệ nhân tài hoa đã đặt công sức và tâm huyết trong việc tạo ra từng chi tiết của dây chuyền này. Thiết kế tỉ mỉ, sáng tạo và độc đáo của dây chuyền là một biểu hiện tối ưu của nghệ thuật trang sức. Được chế tác bằng các tay nghề tinh xảo, mỗi dây chuyền kim cương quý nhất là một bản hòa nhạc tuyệt vời giữa ánh sáng và bóng tối.
+                                   </p>
+                                   <p>
+                                    Sự thanh lịch và độc đáo của dây chuyền kim cương quý nhất biểu hiện sự quý phái và đẳng cấp của người sở hữu. Đây không chỉ là một món trang sức mà còn là một tác phẩm nghệ thuật thể hiện sự đầu tư vào vẻ đẹp và giá trị thực sự của cuộc sống.
+                                   </p>
+                                   <p>
+                                    Dây chuyền kim cương quý nhất là sự kết hợp hoàn hảo giữa sự quý phái của kim cương và sự tinh tế của nghệ thuật trang sức. Nó không chỉ tôn vinh vẻ đẹp mà còn là một biểu tượng của thành công và phong cách cuộc sống.
+                                   </p>
+        
+                                </div>
+                                <hr style="margin-top: 70px;">
+                                
+                            </article>
+                            <div class="review-form">
+                                <h3 style="padding-bottom: 10px; padding-top: 20px;">Viết bình luận của bạn</h3>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="cmt" style="font-size: 1.8rem;">Nhận xét của bạn*</label>
+                                        <textarea style="width: 100%; border: 1px solid; font-size: 1.3rem;" name="cmt" id="cmt" cols="30" rows="10" ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <label for="name">Tên*</label> -->
+                                        <input type="text" id="name" placeholder="Name*" style="border: 1px solid; font-size: 1.5rem;">
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <label for="email">Email*</label> -->
+                                        <input type="text" id="email" placeholder="Email*" style="border: 1px solid; font-size: 1.5rem;">
+                                    </div>
+                                    <button type="submit" style="border: 1px solid; font-size: 1.5rem;margin-bottom: 20px; ">Gửi bình luận</button>
+                                </form>
+                            </div>
+                        
+                        
+                    </section>
+                </div>
+            </div>
         </div>
-    </main>
     
 </div>
 
@@ -235,7 +233,7 @@
               <tr>
                 <td class="section__pd">5</td>
                 <td class="section__pd">Phan Ngọc Thùy</td>
-                <td class="section__pd">21060781</td>
+                <td class="section__pd">21061781</td>
               </tr>
               
             </table>

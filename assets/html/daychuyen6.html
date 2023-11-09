@@ -74,7 +74,14 @@
   background-color:#2B7873;
   border: 2px solid black;
 }
-
+@media (min-width: 350px) and (max-width: 765px){
+  .product-name {
+  transform: translate(0%,10%);
+}
+.iconhd{
+  transform: translate(0%,2000%);
+}
+}
 </style>
 <script>
     function doianh1()
@@ -102,93 +109,94 @@
 </script>
 </head>
 <body>
-    <div class="container">
+  <div class="container">
     <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/logo.png" alt="Logo Website">
-        </a>
-        <nav class="navbar">
-            <a href="../html/home.html">Trang chủ</a>
-            <a href="../html/product1.html">Sản phẩm</a>
-            <a href="../html/about.html">Giới thiệu</a>
-            <a href="../html/index_blog.html">Blog</a>
-            <a href="../html/contact.html">Liên hệ</a>
+      <a href="#" class="logo">
+          <img src="../img/logo.png" alt="Logo Website">
+      </a>
+      <nav class="navbar">
+         <div class="navbar-item"> <a href="home.html">Trang chủ</a></div>
+          <div class="dropdown navbar-item">
+              <a class="dropdown-toggle" href="product1.html"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sản phẩm
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-item" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item-pd" href="product1.html">Nhẫn</a></li>
+                <li><a class="dropdown-item-pd" href="product2.html">Dây chuyền</a></li>
+                <li><a class="dropdown-item-pd" href="product3.html">Vòng</a></li>
+              </ul>
+          </div>
+          <div class="navbar-item"><a href="about.html">Giới thiệu</a></div> 
+          <div class="navbar-item"><a href="index_blog.html">Blog</a></div>
+          <div class="navbar-item"><a href="contact.html">Liên hệ</a></div>
 
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-solid fa-user" id="user-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
+      </nav>
+      <div class="icons" style="display: flex;">
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart" id="cart-btn">
+              <a href="" class="header__cart-note">4</a>
+          </div>
+          <div class="fas fa-solid fa-user" id="user-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
 
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
+      <div class="search-form">
+          <input type="search" id="search-box" placeholder="Tìm kiếm...">
+          <label for="search-box" class="fas fa-search"></label>
+      </div>
 
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
-                </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
-                </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
-                </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item ">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
-                </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <div class="cart-item">
-                <span class="fas fa-items"></span>
-                <img src="../img/logo-web.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">1.000.000VND</div>
-                </div>
-                <button type="button" class="close-ds" disabled aria-label="Close">x</button>
-            </div>
-            <a href="#" id="btn">Kiểm tra</a>
-        </div>
+      <div class="cart-items-container">
+          <a class="cart-item" href="productdetail2.html">
+              <img src="../img/nhan1.png" alt="">
+              <div class="content">
+                  <h3>Nhẫn Vàng Trắng 10K Đính...</h3>
+                  <div class="price">4.190.000đ</div>
+              </div>
+              <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+          </a>
+          <a class="cart-item" href="productdetail1.html">
+              <img src="../img/nhan2.png" alt="">
+              <div class="content">
+                  <h3>Nhẫn Kim Cương Vàng 14K</h3>
+                  <div class="price">22.900.000đ</div>
+              </div>
+              <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+          </a>
+          <a class="cart-item" href="productdetail3.html">
+              <span class="fas fa-items"></span>
+              <img src="../img//nhan3.png" alt="">
+              <div class="content">
+                  <h3>Nhẫn Vàng 18K Đính Đá</h3>
+                  <div class="price">11.872.000đ</div>
+              </div>
+              <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+          </a>
+          <a class="cart-item " href="productdetail4.html">
+              <span class="fas fa-items"></span>
+              <img src="../img/nhan4.png" alt="">
+              <div class="content">
+                  <h3>Nhẫn Kim Cương Vàng... </h3>
+                  <div class="price">34.163.100đ</div>
+              </div>
+              <button type="button" class="close-ds" disabled aria-label="Close">x</button>
+          </a>
+          <a href="cart.html" id="btn">Kiểm tra</a>
+      </div>
 
-        <div class="user-content">
-            <div class="user-item">
-                <a href="account.html" class="user-item-content">Trang cá nhân</a>
-            </div>
-            <div class="user-item">
-                <a href="register.html" class="user-item-content">Đăng ký</a>
-            </div>
-            <div class="user-item">
-                <a href="login.html" class="user-item-content">Đăng nhập</a>
-            </div>
-        </div>
-    </header>
+      <div class="user-content">
+          <div class="user-item">
+              <a href="account.html" class="user-item-content">Trang cá nhân</a>
+          </div>
+          <div class="user-item">
+              <a href="signIn_1.html" class="user-item-content">Đăng ký</a>
+          </div>
+          <div class="user-item">
+              <a href="login_1.html" class="user-item-content">Đăng nhập</a>
+          </div>
+      </div>
+  </header>
 </div>
 <!-- Main -->
  <div class="container-fluid">
@@ -227,12 +235,12 @@
               </div>
 
               <div class="col-md-6">
-                <div class="product"><i class="fa-solid fa-ring fa-2xl"
+                <div class="product"><i class="fa-solid fa-ring fa-2xl iconhd"
                     style="color: #dfcb96; font-size: 4rem; width: 40px; float: left;"></i>
                   <h2 class="product-name" style="width: 80%; margin: 0 65px">Dây chuyền Bạc Ý PNJSilver 0000W060096
                   </h2>
                 </div>
-                <div class="icon" style="font-size: 1.8rem; margin-bottom: 10px;"> <i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
+                <div class="icon" style="font-size: 1.8rem; margin-bottom: 10px; margin-top: 5px;"> <i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
                     class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl"
                     style="color: #e0fd08;"></i><i class="fa-solid fa-star fa-xl" style="color: #e0fd08;"></i><i
                     class="fa-regular fa-star fa-xl"></i> <small
