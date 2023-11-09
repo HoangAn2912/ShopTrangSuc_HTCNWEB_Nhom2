@@ -33,13 +33,15 @@
     
 }
 
+.row-tbl{
+    padding-top: -30px;
+    padding-left: 30px;
+}
 
 .acc-name{
     display: flex;
 }
-.row{
-    padding :30px;
-}
+
 
 .acc-name > th > input {
     width: 100%;
@@ -49,7 +51,6 @@
 }
 .container-table{
     font-size: 1.8rem;
-    margin-top: 200px;
 }
 .container-table tr{
     width:100px;
